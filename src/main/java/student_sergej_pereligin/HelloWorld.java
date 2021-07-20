@@ -1,8 +1,7 @@
-package student_alex_ivanov;
+package student_sergej_pereligin;
 
 public class HelloWorld {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!!!");
+        System.out.println("Hello World!");
     }
 }
