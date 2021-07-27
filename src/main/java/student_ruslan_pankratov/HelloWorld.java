@@ -1,4 +1,4 @@
-package student_pankratov_ruslan.test;
+package student_ruslan_pankratov;
 
 public class HelloWorld {
     public static void main(String[] args) {
