@@ -19,8 +19,7 @@ public class HelloWorld {
         int sum = num1 + num2;
         System.out.println("Sum of these numbers: "+sum);
 
-        int diff = num1 / num2;
-        System.out.println("diff of these numbers: "+diff);
+        System.out.println("diff of these numbers: "+(double)num1 / num2);
 
 
         System.out.println("input min of random number" );
