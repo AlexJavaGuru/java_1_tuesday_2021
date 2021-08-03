@@ -24,12 +24,11 @@ public class HelloWorld {
 
 
         System.out.println("input min of random number" );
-        byte min = in.nextByte();
+        int min = in.nextInt();
 
 
         System.out.println("input max of random number" );
-        byte max = in.nextByte();
-
+        int max = in.nextInt();
 
         System.out.println("Random Number: " + Math.random()*(max-min+1)+min) ;
         in.close();
