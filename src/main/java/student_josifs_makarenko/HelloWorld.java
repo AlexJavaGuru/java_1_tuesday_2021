@@ -19,14 +19,18 @@ public class HelloWorld {
         int sum = num1 + num2;
         System.out.println("Sum of these numbers: "+sum);
 
-        int diff = num1 / num2;
-        System.out.println("diff of these numbers: "+diff);
-        in.close();
+        System.out.println("diff of these numbers: "+(double)num1 / num2);
 
-        int min = 1;
-        int max = 6;
+
+        System.out.println("input min of random number" );
+        int min = in.nextInt();
+
+
+        System.out.println("input max of random number" );
+        int max = in.nextInt();
 
         System.out.println("Random Number: " + Math.random()*(max-min+1)+min) ;
+        in.close();
     }
 
         }
