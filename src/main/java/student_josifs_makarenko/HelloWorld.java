@@ -21,12 +21,18 @@ public class HelloWorld {
 
         int diff = num1 / num2;
         System.out.println("diff of these numbers: "+diff);
-        in.close();
 
-        int min = 1;
-        int max = 6;
+
+        System.out.println("input min of random number" );
+        byte min = in.nextByte();
+
+
+        System.out.println("input max of random number" );
+        byte max = in.nextByte();
+
 
         System.out.println("Random Number: " + Math.random()*(max-min+1)+min) ;
+        in.close();
     }
 
         }
