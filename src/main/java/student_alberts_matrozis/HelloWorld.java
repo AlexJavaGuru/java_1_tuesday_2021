@@ -53,7 +53,7 @@ class HelloUser {
         Scanner a = new Scanner(System.in);
         System.out.println("What is your name?: ");
         String name = a.nextLine();
-        System.out.println("Hello " + name + "!");
+        System.out.print("Hello " + name + "!");
     }
 }
 
@@ -84,13 +84,46 @@ class ArithmeticAverage {
         Scanner a = new Scanner(System.in);
         System.out.println("Please enter a first number: ");
         int num1 = a.nextInt();
-        System.out.println("Please enter second number: ");
+        System.out.println("Please enter a second number: ");
         int num2 = a.nextInt();
-        System.out.println("Please enter third number: ");
+        System.out.println("Please enter a third number: ");
         int num3 = a.nextInt();
 
         float result = (num1 + num2 + num3) / 3f;
 
         System.out.println("Result is = " + result);
+    }
+}
+
+class PrintTestProgram {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = a.nextLine();
+        System.out.print("Hello ");
+        System.out.print(name + ", ");
+        System.out.print("nice to meet you!");
+    }
+}
+
+class SizeMatters {
+    public static void main(String[] args) {
+        System.out.println("Sorry, I have an errors.");
+        System.out.println("Please fix me!");
+    }
+}
+
+class AttentionPlease {
+
+    public static void main(String[] args) {
+        System.out.println("Code outside the method will not compile!");
+        // All code outside main class will not to work
+    }
+}
+
+class NoSleepNoFocus {
+    public static void main(String[] args) {
+        System.out.println("I wanna coffee");
+        System.out.println("So bad");
     }
 }
