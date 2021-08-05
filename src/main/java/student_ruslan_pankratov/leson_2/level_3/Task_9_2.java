@@ -6,13 +6,11 @@ public class Task_9_2 {
 
     int j = 1;
     int d = 11;
-    public  void factorial(int one){
 
-        if(j != d){
+    public void factorial(int one) {
 
-
-            int sum = one * j ;
-
+        if (j != d) {
+            int sum = one * j;
             System.out.println(one + " x " + j++ + " = " + sum);
             factorial(one);
         }
@@ -26,8 +24,6 @@ public class Task_9_2 {
 
         Task_9_2 task = new Task_9_2();
         task.factorial(one);
-
-
 
     }
 }
