@@ -1,20 +1,58 @@
 package student_alberts_matrozis;
 
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner a = new Scanner(System.in);
+        System.out.println("Input a first number: ");
+        double num1 = a.nextDouble();
+        System.out.println("Input a second number: ");
+        double num2 = a.nextDouble();
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Substraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
 
-        int integer     = 5;                // 32-bit data type
-        boolean bool    = true;             // True or false
-        char character  = 't';              // 16-bit Unicode character
-        byte b          = 100;              // 8-bit data type
-        short s         = 15000;            // 16-bit data type
-        double d        = 19.22;            // 64-byte data type with floating point
-        long l          = 100000000;        // 64-bit two's complement integer
-        float f         = 1.6f;             // Single precision 32-bit data type
-        String str      = "Hello World!";   // String data type is object
+    }
+}
 
+class Book {
 
+}
 
+class Phone {
+
+}
+
+class BankAccount {
+
+    public static void main(String[] args) {
+
+    }
+}
+
+class Turtle {
+
+    public static void main(String[] args) {
+
+    }
+
+}
+
+class LoginService {
+
+    public static void main(String[] args) {
+        System.out.println("You can login!");
+    }
+
+}
+
+class HelloUser {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        System.out.println("What is your name?: ");
+        String name = a.nextLine();
+        System.out.println("Hello " + name + "!");
     }
 }
