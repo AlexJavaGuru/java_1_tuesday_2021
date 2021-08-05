@@ -68,3 +68,29 @@ class NumberMultiplication {
         }
     }
 }
+
+class CircleCalculator {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        System.out.println("Please enter a circle radius: ");
+        double radius = a.nextDouble();
+        System.out.println("Perimeter is = " + (2 * 3.14 * radius));
+        System.out.println("Area is = " + (3.14 * (radius * radius)));
+    }
+}
+
+class ArithmeticAverage {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        System.out.println("Please enter a first number: ");
+        int num1 = a.nextInt();
+        System.out.println("Please enter second number: ");
+        int num2 = a.nextInt();
+        System.out.println("Please enter third number: ");
+        int num3 = a.nextInt();
+
+        float result = (num1 + num2 + num3) / 3f;
+
+        System.out.println("Result is = " + result);
+    }
+}
