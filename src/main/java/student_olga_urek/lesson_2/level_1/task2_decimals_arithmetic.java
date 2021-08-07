@@ -1,4 +1,4 @@
-package student_olga_urek.lesson_2.level_2;
+package student_olga_urek.lesson_2.level_1;
 
 import java.util.Scanner;
 
