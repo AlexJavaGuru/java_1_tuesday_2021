@@ -1,4 +1,4 @@
-package student_einars_marhilevics.lesson2.level2;
+package student_einars_marhilevics.lesson_2.level_2;
 
 import java.util.Scanner;
 

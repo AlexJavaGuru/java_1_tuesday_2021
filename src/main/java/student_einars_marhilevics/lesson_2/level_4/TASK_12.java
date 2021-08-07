@@ -1,4 +1,4 @@
-package student_einars_marhilevics.lesson2.level4;
+package student_einars_marhilevics.lesson_2.level_4;
 
 public class TASK_12 {
     /*
