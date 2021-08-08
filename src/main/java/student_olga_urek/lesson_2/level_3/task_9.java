@@ -7,7 +7,7 @@ public class task_9 {
         Scanner myScanner = new Scanner(System.in);
 //это можно сделать красивее, например, создав переменную с рядом чисел от 1 до 10, и последевательно умножая введенное число на числа этого ряда
         //но я пока не знаю, как это реализовать на джаве
-        System.out.println("Please enter any integer:");
+        System.out.println("This program prints out the multiplication table for any integer. Please enter any integer:");
         int inputInteger = myScanner.nextInt();
 
         int resultTwo = inputInteger * 2;
