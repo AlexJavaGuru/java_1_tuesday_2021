@@ -18,10 +18,12 @@ public class Task_1 {
         Scanner scanner= new Scanner(System.in);
         System.out.print("Введите число:");
         int firstNumber=scanner.nextInt();
+        String f =firstNumber+"";
         System.out.println("Результат:");
-        System.out.println("Сложение + 2 = "+(firstNumber+2));
-        System.out.println("Вычитание -2 = " +(firstNumber-2));
-        System.out.println("firstNumer");
+        System.out.println( f +"+ 2 = "+(firstNumber+2));
+        System.out.println(f +"-2 = " +(firstNumber-2));
+        System.out.println(f+"*2 = "+(firstNumber*2));
+        System.out.println(f+"/2 = "+(firstNumber/2));
     }
 
 }
