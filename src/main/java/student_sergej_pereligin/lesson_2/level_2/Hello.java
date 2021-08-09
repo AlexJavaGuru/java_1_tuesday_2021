@@ -1,6 +1,6 @@
 package student_sergej_pereligin.lesson_2.level_2;
 
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class Hello {
