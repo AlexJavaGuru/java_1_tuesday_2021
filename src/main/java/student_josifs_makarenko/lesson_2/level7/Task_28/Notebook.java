@@ -17,5 +17,4 @@ public class Notebook {
         f.setLayout(null);
         f.setVisible(true);
     }
-
 }
