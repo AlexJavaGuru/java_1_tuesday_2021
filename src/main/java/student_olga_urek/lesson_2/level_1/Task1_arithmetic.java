@@ -13,16 +13,16 @@ public class Task1_arithmetic {
         int integerB = myScanner.nextInt();
 
         int addition_result = integerA + integerB;
-        System.out.println(integerA + "+"+ integerB + "=" + addition_result);
+        System.out.println(integerA + "+" + integerB + "=" + addition_result);
 
         int subtraction_result = integerA - integerB;
-        System.out.println(integerA + "-"+ integerB + "=" + subtraction_result);
+        System.out.println(integerA + "-" + integerB + "=" + subtraction_result);
 
         int multiplication_result = integerA * integerB;
-        System.out.println(integerA + "*"+ integerB + "=" + multiplication_result);
+        System.out.println(integerA + "*" + integerB + "=" + multiplication_result);
 
         double division_result = (double) integerA / integerB;
-        System.out.println(integerA + ":"+ integerB + "=" + division_result);
+        System.out.println(integerA + ":" + integerB + "=" + division_result);
 
 
     }
