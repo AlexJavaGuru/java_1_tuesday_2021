@@ -14,12 +14,11 @@ public class Task_2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите дробное число:");
         double firstNumber = scanner.nextDouble();
-        String f = firstNumber + "";
         System.out.println("Результат:");
-        System.out.println(f + "+2 = " + (firstNumber + 2));
-        System.out.println(f + "-2 = " + (firstNumber - 2));
-        System.out.println(f + "*2 = " + (firstNumber * 2));
-        System.out.println(f + "/2 = " + (firstNumber / 2));
+        System.out.println(firstNumber  + "+2 = " + (firstNumber + 2));
+        System.out.println(firstNumber  + "-2 = " + (firstNumber - 2));
+        System.out.println(firstNumber  + "*2 = " + (firstNumber * 2));
+        System.out.println(firstNumber  + "/2 = " + (firstNumber / 2));
     }
 
 }
