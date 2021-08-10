@@ -10,6 +10,6 @@ public class Task_11 {
         int num2 = scanner.nextInt();
         int num3 = scanner.nextInt();
         int sum = num1 + num2 + num3;
-        System.out.println("average arithmetic numbers =" +(double)sum/3);
+        System.out.println("average arithmetic numbers =" +(double) sum / 3);
     }
 }

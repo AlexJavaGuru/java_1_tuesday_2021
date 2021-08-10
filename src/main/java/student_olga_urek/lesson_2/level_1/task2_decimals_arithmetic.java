@@ -13,16 +13,16 @@ public class task2_decimals_arithmetic {
         double decimalB = myScanner.nextDouble();
 
         double addition_result = decimalA + decimalB;
-        System.out.println(decimalA + "+"+ decimalB + "=" + addition_result);
+        System.out.println(decimalA + "+" + decimalB + "=" + addition_result);
 
         double subtraction_result = decimalA - decimalB;
-        System.out.println(decimalA + "-"+ decimalB + "=" + subtraction_result);
+        System.out.println(decimalA + "-" + decimalB + "=" + subtraction_result);
 
         double multiplication_result = decimalA * decimalB;
-        System.out.println(decimalA + "*"+ decimalB + "=" + multiplication_result);
+        System.out.println(decimalA + "*" + decimalB + "=" + multiplication_result);
 
         double division_result = decimalA / decimalB;
-        System.out.println(decimalA + ":"+ decimalB + "=" + division_result);
+        System.out.println(decimalA + ":" + decimalB + "=" + division_result);
 
 
     }
