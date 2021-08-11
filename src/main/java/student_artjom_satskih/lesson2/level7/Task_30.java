@@ -12,7 +12,8 @@ public class Task_30 {
         System.out.println("Number 1 = " + numberOne);
         System.out.println("Number 2 = " + numberTwo);
 
-        float sum = numberOne + numberTwo;
+        // float sum = numberOne + numberTwo;
 
-        System.out.println("Sum = " + sum);
+      //  System.out.println("Sum = " + sum);
+    }
 }
