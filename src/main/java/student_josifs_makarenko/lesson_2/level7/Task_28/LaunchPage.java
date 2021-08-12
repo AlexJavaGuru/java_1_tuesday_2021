@@ -1,9 +1,13 @@
 package student_josifs_makarenko.lesson_2.level7.Task_28;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "Чутка формат поехал и логика в конструкторе. Но ответ засчитан")
     public class LaunchPage implements ActionListener {
 
         JFrame frame = new JFrame();

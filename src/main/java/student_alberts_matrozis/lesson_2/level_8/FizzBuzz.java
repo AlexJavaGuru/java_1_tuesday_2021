@@ -1,7 +1,10 @@
 package student_alberts_matrozis.lesson_2.level_8;
 
+import teacher.annotations.CodeReview;
+
 import java.lang.Integer;
 
+@CodeReview(approved = true)
 public class FizzBuzz {
         public String fizzBuzz(Integer i) {
             String result = "";

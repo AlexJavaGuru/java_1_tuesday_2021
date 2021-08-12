@@ -1,7 +1,10 @@
 package student_artjom_satskih.lesson2.level3;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task9 {
     public static void main(String[] args){
         System.out.print("Input number  ");

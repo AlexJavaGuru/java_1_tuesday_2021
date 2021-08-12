@@ -1,5 +1,8 @@
 package student_josifs_makarenko.lesson_2.level5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_18 {
     static class SizeMatters {
         public static void main(String[] args) {

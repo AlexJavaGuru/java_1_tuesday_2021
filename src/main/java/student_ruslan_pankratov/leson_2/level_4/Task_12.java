@@ -1,5 +1,8 @@
 package student_ruslan_pankratov.leson_2.level_4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_12 {
     //C:\Users\User>java -version
     //java version "16.0.2" 2021-07-20
