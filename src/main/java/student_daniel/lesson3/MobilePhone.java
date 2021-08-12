@@ -1,17 +1,6 @@
 package student_daniel.lesson3;
 
 public class MobilePhone {
-    //konstruktor, peredaem znachenija
-    MobilePhone(String brand, String model, String color, double price, String operationSystem, int randomAccessMemory) {
-        this.brand = brand;
-        this.model = model;
-        this.color = color;
-        this.price = price;
-        this.operationSystem = operationSystem;
-        this.randomAccessMemory = randomAccessMemory;
-    }
-
-
     //svojstva telefona - otlichitelnie cherti objecta
     String brand;
     String model;
@@ -20,6 +9,16 @@ public class MobilePhone {
     String operationSystem;
     int randomAccessMemory;
 
+    //konstruktor, peredaem znachenija
+    //raspolozhenie dolzhno bitj mezhdu svojstvami i povedeniem
+    MobilePhone(String brand, String model, String color, double price, String operationSystem, int randomAccessMemory) {
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.price = price;
+        this.operationSystem = operationSystem;
+        this.randomAccessMemory = randomAccessMemory;
+    }
 
     //metodi povedenija - chto umeet object
     public void makeCall(long callingNumber) {
