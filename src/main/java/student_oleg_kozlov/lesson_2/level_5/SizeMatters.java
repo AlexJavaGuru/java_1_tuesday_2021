@@ -1,5 +1,8 @@
 package student_oleg_kozlov.lesson_2.level_5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class SizeMatters {
 
     public static void main(String[] args) {

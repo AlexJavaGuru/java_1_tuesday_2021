@@ -1,5 +1,9 @@
 package student_olga_urek.lesson_2.level_7;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class CorrectDataTypes {
 
     public static void main(String[] args) {

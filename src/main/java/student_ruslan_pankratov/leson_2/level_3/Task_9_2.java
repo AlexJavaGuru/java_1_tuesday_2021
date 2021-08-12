@@ -1,7 +1,10 @@
 package student_ruslan_pankratov.leson_2.level_3;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_9_2 {
 
     int j = 1;

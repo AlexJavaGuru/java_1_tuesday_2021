@@ -1,5 +1,8 @@
 package student_ruslan_pankratov.leson_2.level_7;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_30 {
 }
 

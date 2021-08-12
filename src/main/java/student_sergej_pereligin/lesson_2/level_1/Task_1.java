@@ -1,5 +1,7 @@
 package student_sergej_pereligin.lesson_2.level_1;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
 /*Написать консольную программу, которая запрашивает у пользователя два целых числа и
@@ -13,6 +15,7 @@ import java.util.Scanner;
 4. Запишите полученные результаты в переменные;
 5. При помощи System.out.println() выведите на консоль полученные результаты сложения, вычитания, умножения и деления.
  (каждый результат на новой строке отдельно).*/
+@CodeReview(approved = true)
 public class Task_1 {
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);

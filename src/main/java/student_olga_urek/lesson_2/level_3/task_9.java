@@ -1,12 +1,16 @@
 package student_olga_urek.lesson_2.level_3;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class task_9 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 //это можно сделать красивее, например, создав переменную с рядом чисел от 1 до 10, и последевательно умножая введенное число на числа этого ряда
         //но я пока не знаю, как это реализовать на джаве
+        //научимся )
         System.out.println("This program prints out the multiplication table for any integer. Please enter any integer:");
         int inputInteger = myScanner.nextInt();
 
@@ -20,16 +24,16 @@ public class task_9 {
         int resultNine = inputInteger * 9;
         int resultTen = inputInteger * 10;
 
-        System.out.println(inputInteger + "x"+ 1 + "=" + inputInteger);
-        System.out.println(inputInteger + "x"+ 2 + "=" + resultTwo);
-        System.out.println(inputInteger + "x"+ 3 + "=" + resultThree);
-        System.out.println(inputInteger + "x"+ 4 + "=" + resultFour);
-        System.out.println(inputInteger + "x"+ 5 + "=" + resultFive);
-        System.out.println(inputInteger + "x"+ 6 + "=" + resultSix);
-        System.out.println(inputInteger + "x"+ 7 + "=" + resultSeven);
-        System.out.println(inputInteger + "x"+ 8 + "=" + resultEight);
-        System.out.println(inputInteger + "x"+ 9 + "=" + resultNine);
-        System.out.println(inputInteger + "x"+ 10 + "=" + resultTen);
+        System.out.println(inputInteger + "x" + 1 + "=" + inputInteger);
+        System.out.println(inputInteger + "x" + 2 + "=" + resultTwo);
+        System.out.println(inputInteger + "x" + 3 + "=" + resultThree);
+        System.out.println(inputInteger + "x" + 4 + "=" + resultFour);
+        System.out.println(inputInteger + "x" + 5 + "=" + resultFive);
+        System.out.println(inputInteger + "x" + 6 + "=" + resultSix);
+        System.out.println(inputInteger + "x" + 7 + "=" + resultSeven);
+        System.out.println(inputInteger + "x" + 8 + "=" + resultEight);
+        System.out.println(inputInteger + "x" + 9 + "=" + resultNine);
+        System.out.println(inputInteger + "x" + 10 + "=" + resultTen);
 
     }
 }

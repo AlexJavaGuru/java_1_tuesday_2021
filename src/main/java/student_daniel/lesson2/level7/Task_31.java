@@ -1,5 +1,8 @@
 package student_daniel.lesson2.level7;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_31 {
 //    Что такое типизированные
 //    и не типизированные языки программирования.

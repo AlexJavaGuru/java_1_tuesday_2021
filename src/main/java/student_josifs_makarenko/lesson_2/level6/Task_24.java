@@ -1,5 +1,8 @@
 package student_josifs_makarenko.lesson_2.level6;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_24 {
    static class NoSleepNoFocus {
         public static void main(String[] args) {

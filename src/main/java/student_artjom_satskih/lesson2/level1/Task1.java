@@ -1,8 +1,10 @@
 package student_artjom_satskih.lesson2.level1;
 
+import teacher.annotations.CodeReview;
+
 import java.io.InputStream;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 public class Task1 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
