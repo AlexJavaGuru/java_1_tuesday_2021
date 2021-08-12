@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //я не уверена, что правильно поняла задание. Может, нужно было придумать программу, где печать без переноса курсора на новую строку имеет практический смысл?
 
-public class task_15 {
+public class Task_15 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 

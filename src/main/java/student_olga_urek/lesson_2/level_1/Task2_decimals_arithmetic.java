@@ -2,7 +2,7 @@ package student_olga_urek.lesson_2.level_1;
 
 import java.util.Scanner;
 
-public class task2_decimals_arithmetic {
+public class Task2_decimals_arithmetic {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
