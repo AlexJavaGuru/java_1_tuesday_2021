@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task_29 {
     public static void main(String[] args) {
-        Scanner myScanner = new Scanner(System.out);
+        Scanner myScanner = new Scanner(System.in);
         System.out.println("enter 1nd number");
         int numberOne = myScanner.nextInt();
         System.out.println("enter 2nd number");
