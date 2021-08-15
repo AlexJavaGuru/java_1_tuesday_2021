@@ -7,5 +7,6 @@ public class HelloWorld {
         System.out.println("Im student ART");
         System.out.println("Jurmala one Love");
         System.out.println("JavaGuru rules");
+        System.out.println("Test");
     }
 }
