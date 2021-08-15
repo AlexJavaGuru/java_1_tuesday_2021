@@ -1,5 +1,7 @@
 package student_sergej_pereligin.lesson_2.level_1;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
 /*Написать консольную программу, которая запрашивает у пользователя два вещественных числа
@@ -9,6 +11,7 @@ import java.util.Scanner;
 
     Scanner scanner = new Scanner(System.in);
     double firstDoubleNumber = scanner.nextDouble();*/
+@CodeReview(approved = true)
 public class Task_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

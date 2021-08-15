@@ -1,5 +1,8 @@
 package student_alberts_matrozis.lesson_2.level_4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_12 {
     public static void main(String[] args) {
         System.out.println("C:\\Users\\user>java -version\n" +

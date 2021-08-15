@@ -1,5 +1,8 @@
 package student_daniel.lesson2.level5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_17 {
 //    Посмотреть видео:  У кого нет шансов? | Рекрутер из Google
 //

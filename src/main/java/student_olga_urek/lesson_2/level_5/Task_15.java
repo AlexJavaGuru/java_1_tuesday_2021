@@ -1,9 +1,12 @@
 package student_olga_urek.lesson_2.level_5;
 
+import teacher.annotations.CodeReview;
+
 import java.util.Scanner;
 
 //я не уверена, что правильно поняла задание. Может, нужно было придумать программу, где печать без переноса курсора на новую строку имеет практический смысл?
 
+@CodeReview(approved = true)
 public class Task_15 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);

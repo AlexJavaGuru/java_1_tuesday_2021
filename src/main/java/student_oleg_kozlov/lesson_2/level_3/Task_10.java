@@ -1,7 +1,13 @@
 package student_oleg_kozlov.lesson_2.level_3;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "Комментарии к вашим действиям лишние. Мы учимся писать такой код, который" +
+        "понятен человеку без пояснений.")
 public class Task_10 {
 
     public static void main(String[] args) {

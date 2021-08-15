@@ -1,9 +1,11 @@
 package student_ruslan_pankratov.leson_2.level_3;
 
+import teacher.annotations.CodeReview;
 import teacher.lesson_2_variables.lessoncode.MathOperations;
 
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

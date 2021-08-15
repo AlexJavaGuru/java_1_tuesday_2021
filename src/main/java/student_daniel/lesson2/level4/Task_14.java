@@ -1,5 +1,8 @@
 package student_daniel.lesson2.level4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_14 {
 //    Как запустить откомпилировнный код с помощью JDK и виртуальной
 //    машины Java (JVM), без помощи среды разработки (из консоли)?
