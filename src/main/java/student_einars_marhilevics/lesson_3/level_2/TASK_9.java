@@ -2,7 +2,7 @@ package student_einars_marhilevics.lesson_3.level_2;
 
 import java.util.Scanner;
 
-public class TASK_9 {
+class TASK_9 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Please enter Your name...");

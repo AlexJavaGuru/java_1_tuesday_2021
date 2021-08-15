@@ -1,7 +1,7 @@
 package student_einars_marhilevics.lesson_3.level_5;
 
 
-public class Dog {
+class Dog {
     String name;
     int age;
     String colour;

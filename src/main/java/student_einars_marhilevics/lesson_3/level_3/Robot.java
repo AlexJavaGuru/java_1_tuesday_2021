@@ -1,6 +1,6 @@
 package student_einars_marhilevics.lesson_3.level_3;
 
-public class Robot {
+class Robot {
     String name;
     Robot(String robotName) {
         this.name = robotName;
