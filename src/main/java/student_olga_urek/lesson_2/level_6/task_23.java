@@ -5,10 +5,10 @@ import teacher.annotations.CodeReviewComment;
 
 @CodeReview(approved = false)
 @CodeReviewComment(comment = "Нужнно подправить отступ от правого края.")
-    class AttentionPlease {
+class AttentionPlease {
 
-        public static void main(String[] args) {
-            System.out.println("Code outside the method will not compile!");
+    public static void main(String[] args) {
+        System.out.println("Code outside the method will not compile!");
 
     }
 }
