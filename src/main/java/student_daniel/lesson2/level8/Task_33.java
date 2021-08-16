@@ -3,7 +3,7 @@ package student_daniel.lesson2.level8;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_33 {
+class Task_33 {
 //    Возможности приходят к тем, кто перестает ждать и начинает искать.
 //    Успех приходит к тем, кто перестает думать и начинает делать.
 //    Поздравляем с поиском и делом.

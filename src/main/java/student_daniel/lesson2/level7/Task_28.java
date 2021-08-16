@@ -3,7 +3,7 @@ package student_daniel.lesson2.level7;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_28 {
+class Task_28 {
 //    При написании Java кода для названий классов принято использовать
 //    нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,
 //                                     также «ГорбатыйРегистр», «СтильВерблюда») — стиль написания

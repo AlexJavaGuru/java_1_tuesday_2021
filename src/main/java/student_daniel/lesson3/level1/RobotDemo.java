@@ -1,6 +1,6 @@
 package student_daniel.lesson3.level1;
 
-public class RobotDemo {
+class RobotDemo {
     //Task 1, 2, 3, 4, 5, 6
     public static void main(String[] args) {
         Robot t800 = new Robot();

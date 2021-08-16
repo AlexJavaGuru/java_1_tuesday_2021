@@ -3,7 +3,7 @@ package student_daniel.lesson2.level4;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_12 {
+class Task_12 {
     public static void main(String[] args) {
         String javaVersion = "C:\\Users\\NUC>java -version\n" +
                              "java version \"1.7.0_80\"\n" +

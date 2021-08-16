@@ -1,6 +1,6 @@
 package student_daniel.lesson3.level3;
 
-public class Robot2 {
+class Robot2 {
         //Task 11, 12, 13
         String name;
 
