@@ -1,4 +1,4 @@
-package student_ruslan_pankratov.leson_3.level_6;
+package student_ruslan_pankratov.leson_3.level_7;
 
 import java.util.Scanner;
 
