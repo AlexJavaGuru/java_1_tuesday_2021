@@ -15,13 +15,13 @@ class Refrigerator {
 
     //Methods
     public int getTemperature() {
-        return temperature - 11;
+        return temperature;
     }
 
     void getCold() {
         System.out.println("Samsung " + model);
         System.out.println("Annual consumption " + consumption + " kWt");
         System.out.println("Current temperature is " + temperature + " celsius");
-        System.out.println("Modified temperature is " + getTemperature() + " celsius");
+        System.out.println("Get temperature: " + getTemperature() + " celsius");
     }
 }
