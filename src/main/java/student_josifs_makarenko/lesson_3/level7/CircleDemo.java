@@ -6,7 +6,6 @@ public class CircleDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Circle circle1 = new Circle();
-        circle1.setPi(Math.PI);
         System.out.println("Input radius");
         circle1.setRadius(scanner.nextDouble());
         circle1.calculateArea();

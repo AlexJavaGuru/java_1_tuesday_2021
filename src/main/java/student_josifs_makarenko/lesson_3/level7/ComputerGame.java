@@ -1,6 +1,13 @@
 package student_josifs_makarenko.lesson_3.level7;
 
+
+
 public class ComputerGame {
+
+    String name;
+    String dateOfRelease;
+    boolean feels;
+
     public String getName() {
         return name;
     }
@@ -8,8 +15,6 @@ public class ComputerGame {
     public void setName(String name) {
         this.name = name;
     }
-
-    String name;
 
 
     public String getDateOfRelease() {
@@ -20,7 +25,6 @@ public class ComputerGame {
         this.dateOfRelease = dateOfRelease;
     }
 
-    String dateOfRelease;
 
     public boolean isFeels() {
         return feels;
@@ -30,7 +34,6 @@ public class ComputerGame {
         this.feels = feels;
     }
 
-    boolean feels;
 
     void sayСрaracteristic(){
         System.out.println("Game released in " + getDateOfRelease());

@@ -1,6 +1,11 @@
 package student_josifs_makarenko.lesson_3.level7;
 
 public class Product {
+
+    String name;
+    double regularPrice;
+    double discount;
+
     public String getName() {
         return name;
     }
@@ -9,7 +14,7 @@ public class Product {
         this.name = name;
     }
 
-    String name;
+
 
     public double getRegularPrice() {
         return regularPrice;
@@ -19,7 +24,6 @@ public class Product {
         this.regularPrice = regularPrice;
     }
 
-    double regularPrice;
 
     public double getDiscount() {
         return discount;
@@ -29,7 +33,6 @@ public class Product {
         this.discount = discount;
     }
 
-    double discount;
 
     void calculationAfterPrice(){
         double discountPrice;

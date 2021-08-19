@@ -1,21 +1,21 @@
 package student_josifs_makarenko.lesson_3.dog;
 
 public class Dog {
-   private String dogName;
-    String dogColor;
-    int dogAge;
+   private String name;
+    String color;
+    int age;
 
-    Dog(String dogColor, String dogName) {
-        this.dogAge = 0;
-        this.dogColor = dogColor;
-        this.dogName = dogName;
+    Dog(String color, String name) {
+        this.age = 0;
+        this.color = color;
+        this.name = name;
     }
     void voice(){
-        System.out.println("Dog's name is: " + dogName);
-        System.out.println("Dog's age is: " + dogAge);
-        System.out.println("Dog's color is: " + dogColor);
+        System.out.println("Dog's name is: " + name);
+        System.out.println("Dog's age is: " + age);
+        System.out.println("Dog's color is: " + color);
     }
     void happyBirthday(){
-       dogAge = dogAge++;
+       age = age++;
     }
 }

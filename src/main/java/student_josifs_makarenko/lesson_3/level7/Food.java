@@ -1,6 +1,10 @@
 package student_josifs_makarenko.lesson_3.level7;
 
 public class Food {
+
+    private String name;
+    boolean taste;
+
     public String getName() {
         return name;
     }
@@ -9,7 +13,6 @@ public class Food {
         this.name = name;
     }
 
-   private String name;
 
     public boolean isTaste() {
         return taste;
@@ -19,7 +22,6 @@ public class Food {
         this.taste = taste;
     }
 
-    boolean taste;
 
     void foodName(){
         System.out.println("This food is " + getName());

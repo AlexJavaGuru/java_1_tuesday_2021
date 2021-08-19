@@ -1,4 +1,5 @@
-package student_josifs_makarenko.lesson_3.level4;public class BankAccount {
+package student_josifs_makarenko.lesson_3.level4;
+class BankAccount {
     String ownerFirstName;
     String ownerLastName;
     int moneyAmount;

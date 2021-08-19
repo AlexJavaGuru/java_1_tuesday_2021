@@ -1,6 +1,11 @@
 package student_josifs_makarenko.lesson_3.level7;
 
 public class BankAccount {
+
+
+    String owner;
+    int money;
+
     public void setOwner(String owner) {
         this.owner = owner;
     }
@@ -9,8 +14,6 @@ public class BankAccount {
         return owner;
     }
 
-    String owner;
-
     public int getMoney() {
         return money;
     }
@@ -18,8 +21,6 @@ public class BankAccount {
     public void setMoney(int money) {
         this.money = money;
     }
-
-    int money;
 
     BankAccount(int money, String owner) {
         this.owner = owner;
