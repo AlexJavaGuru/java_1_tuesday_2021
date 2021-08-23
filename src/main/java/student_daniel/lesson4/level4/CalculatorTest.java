@@ -34,8 +34,7 @@ class CalculatorTest {
         if (realResult == plusResult) {  // проверяем правильно ли сработал тестируемый код
             System.out.println("Test = OK, results is:");
             System.out.println(firstNum + secondNum);
-        }
-        else {
+        } else {
             System.out.println("Test = FAILED");
         }
 
@@ -43,8 +42,7 @@ class CalculatorTest {
         if (realResultTwo == minusResult) {
             System.out.println("Test = OK, results is:");
             System.out.println(firstNum - secondNum);
-        }
-        else {
+        } else {
             System.out.println("Test = FAILED");
         }
 
@@ -52,8 +50,7 @@ class CalculatorTest {
         if (realResultThree == multiplyResult) {
             System.out.println("Test = OK, results is:");
             System.out.println(firstNum * secondNum);
-        }
-        else {
+        } else {
             System.out.println("Test = FAILED");
         }
 
@@ -61,8 +58,7 @@ class CalculatorTest {
         if (realResultFour == divideResult) {
             System.out.println("Test = OK, results is:");
             System.out.println(firstNum / secondNum);
-        }
-        else {
+        } else {
             System.out.println("Test = FAILED");
         }
     }

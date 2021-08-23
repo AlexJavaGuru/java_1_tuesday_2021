@@ -9,14 +9,11 @@ public class ConditionalStatements {
 
         if (x < 10) {
             System.out.println("X is less then 10");
-        }
-        else if (x > 10) {
+        } else if (x > 10) {
             System.out.println("X is greater then 10");
-        }
-        else if (x == 0) {
+        } else if (x == 0) {
             System.out.println("X is equal to 0");
-        }
-        else {
+        } else {
             System.out.println("X is equal to 10");
         }
 
@@ -52,7 +49,7 @@ public class ConditionalStatements {
         // 0    1
         // 1    0
 
-        if(x > 5 && x < 15) {
+        if (x > 5 && x < 15) {
             System.out.println("Within bounds!");
         }
 
@@ -72,7 +69,7 @@ public class ConditionalStatements {
                 System.out.println("love coffee");
                 //break is needed to stop code execution
                 break;
-                //multiple values can be applied
+            //multiple values can be applied
             case 2, 4:
                 System.out.println("love tea");
                 break;
