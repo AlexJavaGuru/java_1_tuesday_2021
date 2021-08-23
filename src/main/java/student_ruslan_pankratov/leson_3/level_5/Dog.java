@@ -1,28 +1,31 @@
 package student_ruslan_pankratov.leson_3.level_5;
 
-public class Task_19 {
-}
+// Task 18 - 22
 
-
-class DogOne {
+class Dog {
     private final String name;
     private int age;
-    public DogOne(String name, int age) {
+    private String color;
+
+    public Dog(String name, int age, String color) {
         this.name = name;
         this.age = age;
+        this.color = color;
     }
 
     void voice() {
         System.out.println("Кличка собаки: " + name);
         System.out.println("Возраст собаки: " + age);
+        System.out.println("Цвет собаки: " + color);
+    }
+
+    void changeColor(String newColor) {
+        this.color = newColor;
+    }
+
+    void happyBirthday() {
+        age++;
     }
 }
 
-class DogDemoOne {
-    public static void main(String[] args) {
-        DogOne dog = new DogOne("Ber", 777);
-        dog.voice();
 
-
-    }
-}
