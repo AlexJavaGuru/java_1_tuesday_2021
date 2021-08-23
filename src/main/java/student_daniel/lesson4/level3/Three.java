@@ -34,32 +34,19 @@ class Three {
         }
 
         //Task10
-        // + - -
         if (numOne > numTwo && numOne > numThree) {
             System.out.println(numOne + " is greater");
-        }
-        // + + -
-        else if (numOne == numTwo && numOne > numThree) {
+        } else if (numOne == numTwo && numOne > numThree) {
             System.out.println(numOne + " is greater, and it's equal to one of other two numbers");
-        }
-        // - + -
-        else if (numOne < numTwo && numTwo > numThree) {
+        } else if (numOne < numTwo && numTwo > numThree) {
             System.out.println(numTwo + " is greater");
-        }
-        // - + +
-        else if (numOne < numTwo && numTwo == numThree) {
+        } else if (numOne < numTwo && numTwo == numThree) {
             System.out.println(numTwo + " is greater, and it's equal to one of other two numbers");
-        }
-        // - - +
-        else if (numOne < numTwo && numTwo < numThree) {
+        } else if (numOne < numTwo && numTwo < numThree) {
             System.out.println(numThree + " is greater");
-        }
-        // + - +
-        else if (numOne > numTwo && numTwo < numThree) {
+        } else if (numOne > numTwo && numTwo < numThree) {
             System.out.println(numThree + " is greater, and it's equal to one of other two numbers");
-        }
-        // + + +
-        else {
+        } else {
             System.out.println("All numbers are equal");
         }
     }
