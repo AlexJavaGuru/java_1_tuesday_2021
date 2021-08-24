@@ -18,7 +18,7 @@ class CalculatorTest {
         int expectedResult = 75;
         Calculator calculator = new Calculator();
         int result = calculator.sum(firstNumber, secondNumber);
-        controller(result,expectedResult,"Sum");
+        controller(result, expectedResult, "Sum");
     }
 
     public void subTest() {
@@ -27,7 +27,7 @@ class CalculatorTest {
         int expectedResult = 20;
         Calculator calculator = new Calculator();
         int result = calculator.sub(firstNumber, secondNumber);
-        controller(result,expectedResult,"Sub");
+        controller(result, expectedResult, "Sub");
     }
 
     public void mulTest() {
@@ -36,7 +36,7 @@ class CalculatorTest {
         int expectedResult = 25;
         Calculator calculator = new Calculator();
         int result = calculator.mul(firstNumber, secondNumber);
-        controller(result,expectedResult,"Mul");
+        controller(result, expectedResult, "Mul");
     }
 
     public void divTest() {
@@ -45,14 +45,14 @@ class CalculatorTest {
         int expectedResult = 5;
         Calculator calculator = new Calculator();
         int result = calculator.div(firstNumber, secondNumber);
-        controller(result,expectedResult,"Div");
+        controller(result, expectedResult, "Div");
     }
 
     public void isEvenTest1() {
         Calculator calculator = new Calculator();
         boolean expectedResult = true;
         boolean result = calculator.isEven(40);
-        controller(result,expectedResult,"isEven");
+        controller(result, expectedResult, "isEven");
 
     }
 
@@ -60,7 +60,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         boolean expectedResult = false;
         boolean result = calculator.isEven(41);
-        controller(result,expectedResult,"isEven");
+        controller(result, expectedResult, "isEven");
     }
 
     public void controller(int result, int expectedResult, String name) {

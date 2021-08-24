@@ -1,8 +1,9 @@
 package student_ruslan_pankratov.lesson_4.level_3;
 
 import java.util.Scanner;
+
 //Task_10
- class NumberMore {
+class NumberMore {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write three integers");
@@ -11,13 +12,13 @@ import java.util.Scanner;
         int result3 = scanner.nextInt();
 
 
-        if((result > result2)&&(result2 > result3)){
+        if ((result > result2) && (result2 > result3)) {
             System.out.println("Largest number " + result);
-        }else if((result < result2)&&(result2 < result3)){
+        } else if ((result < result2) && (result2 < result3)) {
             System.out.println("Largest number " + result3);
-        }else {
+        } else {
             System.out.println("Largest number " + result2);
         }
 
     }
- }
+}

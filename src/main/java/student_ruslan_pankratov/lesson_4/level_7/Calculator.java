@@ -1,4 +1,5 @@
 package student_ruslan_pankratov.lesson_4.level_7;
+
 //Task_24
 class Calculator {
     public int sum(int firstNumber, int secondNumber) {

@@ -11,11 +11,9 @@ class WholeNumber {
         int numder = scanner.nextInt();
         if (numder > 0) {
             System.out.println("This is a positive number: " + numder);
-        }
-        if (numder < 0) {
+        } else if (numder < 0) {
             System.out.println("This is a negative number: " + numder);
-        }
-        if (numder == 0) {
+        } else {
             System.out.println("This number is zero" + numder);
         }
 

@@ -46,7 +46,7 @@ class Calculator {
             return firstNumber;
         } else if ((secondNumber >= firstNumber) && (firstNumber >= threeNumber)) {
             return secondNumber;
-        } else if((threeNumber >= firstNumber) && (threeNumber >= secondNumber)){
+        } else if ((threeNumber >= firstNumber) && (threeNumber >= secondNumber)) {
             return threeNumber;
         } else {
             return firstNumber;

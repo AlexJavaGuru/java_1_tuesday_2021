@@ -11,9 +11,9 @@ class NumberService {
         int result2 = scanner.nextInt();
         if (result > result2) {
             System.out.println("This number is greater: " + result);
-        } else if(result < result2) {
+        } else if (result < result2) {
             System.out.println("This number is greater: " + result2);
-        }else {
+        } else {
             System.out.println("These numbers are equal: " + result + ", " + result2);
         }
     }

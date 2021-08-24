@@ -17,21 +17,21 @@ class LightColorDetectorTest {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String expectedResult = "Violet";
         String result = lightColorDetector.detect(wavelength);
-       controller(result,expectedResult,"Violet");
+        controller(result, expectedResult, "Violet");
     }
 
     public void testBlue(int wavelength) {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Blue";
-        controller(result,expectedResult,"Blue");
+        controller(result, expectedResult, "Blue");
     }
 
     public void testGreen(int wavelength) {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Green";
-        controller(result,expectedResult,"Green");
+        controller(result, expectedResult, "Green");
 
     }
 
@@ -39,28 +39,28 @@ class LightColorDetectorTest {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Yellow";
-        controller(result,expectedResult,"Yellow");
+        controller(result, expectedResult, "Yellow");
     }
 
     public void testOrange(int wavelength) {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Orange";
-        controller(result,expectedResult,"Orange");
+        controller(result, expectedResult, "Orange");
     }
 
     public void testRed(int wavelength) {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Red";
-        controller(result,expectedResult,"Red");
+        controller(result, expectedResult, "Red");
     }
 
     public void testInvisible(int wavelength) {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(wavelength);
         String expectedResult = "Invisible Light";
-        controller(result,expectedResult,"Invisible Light");
+        controller(result, expectedResult, "Invisible Light");
     }
 
 

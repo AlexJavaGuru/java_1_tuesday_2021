@@ -1,6 +1,7 @@
 package student_ruslan_pankratov.lesson_4.level_1;
 
 import java.util.Scanner;
+
 //Task_3
 class Week {
     public static void main(String[] args) {
