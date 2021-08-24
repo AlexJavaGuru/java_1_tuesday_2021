@@ -15,9 +15,9 @@ class Dog {
         System.out.println("I am " + this.age + " years old");
         System.out.println("My colour is " + this.colour);}
     public void happyBirthday() {
-        age ++;
+        age++;
         }
     public void changeColor(String newColor) {
         this.colour = newColor;
+        }
     }
-}
