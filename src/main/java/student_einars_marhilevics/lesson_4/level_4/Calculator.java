@@ -44,6 +44,12 @@ class Calculator {
             return thirdNumber;
         } else if (firstNumber == secondNumber && secondNumber > thirdNumber) {
             return firstNumber;
+        } else if (secondNumber == thirdNumber && secondNumber > firstNumber) {
+            return thirdNumber;
+        } else if (firstNumber == thirdNumber && firstNumber > secondNumber) {
+            return firstNumber;
+        } else  {
+            return firstNumber;
         }
     }
 }
