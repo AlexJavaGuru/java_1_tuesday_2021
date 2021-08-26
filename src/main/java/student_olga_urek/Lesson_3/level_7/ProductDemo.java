@@ -6,7 +6,6 @@ class ProductDemo {
         Product myProduct = new Product("an elephant");
         myProduct.setRegularPrice(150);
         myProduct.setDiscount(50);
-        myProduct.actualPrice();
         myProduct.printInformation();
     }
 }
