@@ -22,9 +22,7 @@ class Stock {
             minPrice = newPrice;
         } else if (newPrice > maxPrice) {
             maxPrice = newPrice;
-        } else {
-            minPrice = currentPrice;
-            maxPrice = currentPrice;
+
         }
     }
 

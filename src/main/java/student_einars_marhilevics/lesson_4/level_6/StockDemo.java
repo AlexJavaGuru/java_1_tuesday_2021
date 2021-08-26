@@ -4,11 +4,11 @@ class StockDemo {
     public static void main(String[] args) {
         Stock stock = new Stock("Google",10);
         System.out.println(stock.getPriceInformation());
-        stock.updatePrice(20);
+        stock.updatePrice(15);
         System.out.println(stock.getPriceInformation());
-        stock.updatePrice(50);
+        stock.updatePrice(7);
         System.out.println(stock.getPriceInformation());
-        stock.updatePrice(5);
+        stock.updatePrice(14);
         System.out.println(stock.getPriceInformation());
     }
 }
