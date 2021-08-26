@@ -3,7 +3,7 @@ package student_daniel.lesson2.level6;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_26 {
+class Task_26 {
 //    Проверьте все названия созданных вами пакетов.
 //
 //    В их названии должны использоваться только маленькие буквы!

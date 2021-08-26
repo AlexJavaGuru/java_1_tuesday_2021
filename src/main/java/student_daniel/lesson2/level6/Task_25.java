@@ -3,7 +3,7 @@ package student_daniel.lesson2.level6;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_25 {
+class Task_25 {
 //    Проверьте все названия созданных вами классов.
 //
 //    В Java принято называть классы с заглавной буквы.

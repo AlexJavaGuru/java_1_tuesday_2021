@@ -1,7 +1,7 @@
-package student_ruslan_pankratov.leson_2.level_7;
+package student_ruslan_pankratov.leson_3.level_7;
 
 //Task_31
-public class Product {
+ class Product {
     String name;
     double regularPrice;
     double discount;

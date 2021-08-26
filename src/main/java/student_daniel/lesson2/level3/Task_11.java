@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 @CodeReview(approved = true)
 @CodeReviewComment(comment = "А если результат будет не целый?")
-public class Task_11 {
+class Task_11 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 

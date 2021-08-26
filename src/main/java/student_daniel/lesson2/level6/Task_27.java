@@ -3,7 +3,7 @@ package student_daniel.lesson2.level6;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_27 {
+class Task_27 {
 //    Проверьте, соответствует ли структура созданных вами пакетов структуре пакетов в папке teacher.
 //
 //            teacher
