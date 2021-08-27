@@ -32,9 +32,12 @@ public class Calculator {
 
 
         public boolean isEven(int number) {
-        if(number%2==0){return true;}
-        else{return false;}
-    }
+            if (number % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }}
 
 /*Добавьте в класс Calculator метод для определения
 максимального из двух целых чисел.
@@ -47,8 +50,3 @@ public class Calculator {
 Создайте по одному тесту на каждый из сценариев!
 
 */
-    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        if(firstNumber>secondNumber){return }
-
-    }
-}
