@@ -7,21 +7,18 @@ public class StockDemo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input name and real price of the stock");
         Stock stock = new Stock(scanner.nextLine(), scanner.nextInt());
-        stock.setMaxPrice(stock.getRealPrice());
-        stock.setMinPrice(stock.getRealPrice());
+
         stock.getPriceInformation();
-        stock.writePriceInformation();
+        System.out.println("Input new price");
+
+        stock.updatePrice(scanner.nextInt());
+        stock.getPriceInformation();
+
         System.out.println("Input new price");
         stock.updatePrice(scanner.nextInt());
         stock.getPriceInformation();
-        stock.writePriceInformation();
         System.out.println("Input new price");
         stock.updatePrice(scanner.nextInt());
         stock.getPriceInformation();
-        stock.writePriceInformation();
-        System.out.println("Input new price");
-        stock.updatePrice(scanner.nextInt());
-        stock.getPriceInformation();
-        stock.writePriceInformation();
     }
 }

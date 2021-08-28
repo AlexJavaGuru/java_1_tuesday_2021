@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class ProgramDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ProgramForThreeNumbera program = new ProgramForThreeNumbera();
+        ProgramForThreeNumber program = new ProgramForThreeNumber();
         System.out.println("Input three numbers");
-        program.setNumberOne(scanner.nextInt());
-        program.setNumberTwo(scanner.nextInt());
-        program.setNumberThree(scanner.nextInt());
-        program.equalOrDifferent();
-        program.increasingOrDecreasing();
-        program.lagerNumber();
-        program.leastNumber();
+        int numberOne = scanner.nextInt();
+        int numberTwo = scanner.nextInt();
+        int numberThree = scanner.nextInt();
+        program.equalOrDifferent(numberOne, numberTwo, numberThree);
+        program.increasingOrDecreasing(numberOne, numberTwo, numberThree);
+        program.lagerNumber(numberOne, numberTwo, numberThree);
+        program.leastNumber(numberOne, numberTwo, numberThree);
     }
 }

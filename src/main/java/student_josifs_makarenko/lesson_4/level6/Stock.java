@@ -6,62 +6,26 @@ public class Stock {
     int maxPrice;
     int minPrice;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRealPrice() {
-        return realPrice;
-    }
-
-    public void setRealPrice(int realPrice) {
-        this.realPrice = realPrice;
-    }
-
-    public int getMaxPrice() {
-        return maxPrice;
-    }
-
-    public void setMaxPrice(int maxPrice) {
-        this.maxPrice = maxPrice;
-    }
-
-    public int getMinPrice() {
-        return minPrice;
-    }
-
-    public void setMinPrice(int minPrice) {
-        this.minPrice = minPrice;
-    }
-
     Stock (String name, int realPrice) {
-        setName(name);
-        setRealPrice(realPrice);
+        this.name = name;
+        this.realPrice = realPrice;
+        maxPrice = realPrice;
+        minPrice = realPrice;
     }
 
     public int updatePrice(int newPrice) {
-        setRealPrice(newPrice);
-        return newPrice;
+        realPrice = newPrice;
+        if (newPrice >= maxPrice) {
+            maxPrice = newPrice;
+            return maxPrice;
+        } else if (newPrice <= minPrice) {
+            minPrice = newPrice;
+            return minPrice;
+        }
+        return 0;
     }
 
-    public int getPriceInformation() {
-        if (getMaxPrice() >= getRealPrice()) {
-            setMaxPrice(getMaxPrice());
-        } else {
-            setMaxPrice(getRealPrice());
-        }
-        if (getMinPrice() <= getRealPrice()) {
-            setMinPrice(getMinPrice());
-        } else {
-            setMinPrice(getRealPrice());
-        }
-        return getMaxPrice() & getMinPrice() & getRealPrice();
-    }
-    public void writePriceInformation() {
-        System.out.println("Company = " + getName() + ", Current price = " + getRealPrice() + ", Max price = " + getMaxPrice() + ", Min price = " + getMinPrice());
+    public void getPriceInformation() {
+        System.out.println("Company = " + name + ", Max price = " + maxPrice + ", Min price = " + minPrice);
     }
 }

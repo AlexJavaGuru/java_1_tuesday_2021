@@ -7,11 +7,11 @@ public class ProgramDemo {
         Scanner scanner = new Scanner(System.in);
         ProgramForTwoNumbers program = new ProgramForTwoNumbers();
         System.out.println("Input two numbers");
-        program.setNumberOne(scanner.nextInt());
-        program.setNumberTwo(scanner.nextInt());
-        program.largerNumber();
-        program.lesserNumber();
-        program.equalOrDifferent();
+        program.largerNumber(scanner.nextInt(), scanner.nextInt());
+        System.out.println("Input two numbers");
+        program.lesserNumber(scanner.nextInt(), scanner.nextInt());
+        System.out.println("Input two numbers");
+        program.equalOrDifferent(scanner.nextInt(), scanner.nextInt());
 
     }
 }

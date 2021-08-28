@@ -7,8 +7,8 @@ public class CalculatorDemo {
         Scanner scanner = new Scanner(System.in);
         Calculator calculator = new Calculator();
         System.out.println("Input a number");
-        calculator.setNumber(scanner.nextInt());
-        calculator.showWhatIsYourNumber();
-        calculator.evenOdd();
+        int number = scanner.nextInt();
+        calculator.showWhatIsYourNumber(number);
+        calculator.evenOdd(number);
     }
 }

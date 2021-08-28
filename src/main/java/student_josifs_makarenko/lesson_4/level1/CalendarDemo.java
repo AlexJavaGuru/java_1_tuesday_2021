@@ -7,7 +7,6 @@ public class CalendarDemo {
         Scanner scanner = new Scanner(System.in);
         Calendar calendar = new Calendar();
         System.out.println("Input number from 1 to 7");
-        calendar.setNumber(scanner.nextInt());
-        calendar.calendarWork();
+        calendar.calendarWork(scanner.nextInt());
     }
 }

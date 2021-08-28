@@ -33,23 +33,9 @@ public class Calculator {
     }
 
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        if (firstNumber == secondNumber && firstNumber == thirdNumber) {
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
             return firstNumber;
-        } else if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-            return firstNumber;
-        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-            return secondNumber;
-        } else if (secondNumber == firstNumber && secondNumber < thirdNumber) {
-            return thirdNumber;
-        } else if (thirdNumber == firstNumber && thirdNumber < secondNumber) {
-            return secondNumber;
-        } else if (secondNumber == thirdNumber && secondNumber < firstNumber) {
-            return firstNumber;
-        } else if (secondNumber == firstNumber && secondNumber > thirdNumber) {
-            return secondNumber;
-        } else if (thirdNumber == firstNumber && thirdNumber > secondNumber) {
-            return thirdNumber;
-        } else if (secondNumber == thirdNumber && secondNumber > firstNumber) {
+        } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             return secondNumber;
         }
         return thirdNumber;
