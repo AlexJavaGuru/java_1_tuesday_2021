@@ -28,7 +28,8 @@ public class StockTest {
         Stock stock = new Stock("google", 10);
         int newPrice = 999;
         int expectedResult = 999;
-        int realResult = stock.updatePrice(newPrice);
+        stock.updatePrice(newPrice);
+        int realResult = stock.maxPrice;
         check(expectedResult, realResult, "UpdatePriceTest");
     }
 
