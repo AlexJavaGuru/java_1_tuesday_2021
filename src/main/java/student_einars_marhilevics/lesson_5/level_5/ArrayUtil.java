@@ -1,8 +1,9 @@
 package student_einars_marhilevics.lesson_5.level_5;
 
+import java.util.Arrays;
 import java.util.Random;
 
-class ArrayUtil {
+public class ArrayUtil {
     public int[] createArray(int arrayLength) {
         int[] array = new int[arrayLength];
         return array;
@@ -15,8 +16,8 @@ class ArrayUtil {
     }
     public void printArrayToConsole(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i] + " ");
         }
+        System.out.println(Arrays.toString(array));
     }
     public int findMaxNumber(int[] array) {
         int bigNum = 0;
