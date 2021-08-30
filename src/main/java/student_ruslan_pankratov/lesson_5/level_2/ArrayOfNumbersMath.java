@@ -3,19 +3,15 @@ package student_ruslan_pankratov.lesson_5.level_2;
 //Task_15
 class ArrayOfNumbersMath {
     public static void main(String[] args) {
-        int numberOne = (int) (Math.random() * 100 + 10);
-        int numberTwo = (int) (Math.random() * 100 + 10);
-        int numberThree = (int) (Math.random() * 110);
 
-        int[] number = {numberOne, numberTwo, numberThree};
-        for (int i : number) {
-            System.out.println(i);
+        int[] number = new int[3];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = (int) (Math.random() * 100);
+            System.out.println(number[i]);
         }
-        number[0] = number[0] + 2;
-        number[1] = number[1] + 2;
-        number[2] = number[2] + 2;
-        for (int b : number) {
-            System.out.println(b);
+        for (int i = 0; i < number.length; i++) {
+            number[i] = number[i] + 2;
+            System.out.println(number[i]);
         }
     }
 }

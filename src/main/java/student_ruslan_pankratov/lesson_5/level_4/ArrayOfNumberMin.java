@@ -12,7 +12,6 @@ class ArrayOfNumberMin {
     public static void method() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива");
-        int min = 100;
         int size = scanner.nextInt();
 
         int[] result = new int[size];
@@ -26,7 +25,7 @@ class ArrayOfNumberMin {
         for (int i : result) {
             System.out.print(i + " ");
         }
-
+        int min = result[0];
         for (int i = 0; i < result.length; i++) {
             if (result[i] < min) {
                 min = result[i];

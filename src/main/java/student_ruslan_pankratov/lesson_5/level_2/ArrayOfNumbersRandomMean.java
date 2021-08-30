@@ -4,12 +4,16 @@ package student_ruslan_pankratov.lesson_5.level_2;
 class ArrayOfNumbersRandomMean {
 
     public static void main(String[] args) {
-        int numberOne = (int) (Math.random() * 110 - 10);
-        int numberTwo = (int) (Math.random() * 90 + 10);
-        int numberThree = (int) (Math.random() * 100);
-
-        int[] number = {numberOne, numberTwo, numberThree};
-        int result = (number[0] + number[1] + number[2]) / 3;
-        System.out.println(result);
+        int[] number = new int[3];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = (int) (Math.random() * 100);
+            System.out.println(number[i]);
+        }
+        int result = 0;
+        for (int i = 0; i < number.length; i++) {
+            result = result + number[i];
+        }
+        double resNumber = (double) result / number.length;
+        System.out.println(resNumber);
     }
 }

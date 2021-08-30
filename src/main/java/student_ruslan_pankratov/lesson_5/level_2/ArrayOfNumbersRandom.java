@@ -4,13 +4,10 @@ package student_ruslan_pankratov.lesson_5.level_2;
 class ArrayOfNumbersRandom {
     public static void main(String[] args) {
 
-        int one = (int) (Math.random() * 7 + 10);
-        int two = (int) (Math.random() * 7 + 10);
-        int three = (int) (Math.random() * 7 + 10);
-
-        int[] number = {one, two, three};
-        for (int i : number) {
-            System.out.println(i);
+        int[] number = new int[3];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = (int) (Math.random() * 100);
+            System.out.println(number[i]);
         }
     }
 }

@@ -1,6 +1,6 @@
 package student_ruslan_pankratov.lesson_5.level_7;
 
-import student_ruslan_pankratov.lesson_5.level_6.ArrayUtil;
+import student_ruslan_pankratov.lesson_5.level_5.ArrayUtil;
 
 import java.util.Scanner;
 

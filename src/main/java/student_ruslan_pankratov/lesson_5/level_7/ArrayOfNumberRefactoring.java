@@ -2,7 +2,7 @@ package student_ruslan_pankratov.lesson_5.level_7;
 
 import java.util.Scanner;
 
-import student_ruslan_pankratov.lesson_5.level_6.ArrayUtil;
+import student_ruslan_pankratov.lesson_5.level_5.ArrayUtil;
 
 //Task_41
 class ArrayOfNumberRefactoring {

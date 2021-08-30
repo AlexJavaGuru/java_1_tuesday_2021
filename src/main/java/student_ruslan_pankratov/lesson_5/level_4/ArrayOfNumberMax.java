@@ -12,7 +12,7 @@ class ArrayOfNumberMax {
     public static void method() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива");
-        int max = 0;
+
         int size = scanner.nextInt();
 
         int[] result = new int[size];
@@ -27,6 +27,7 @@ class ArrayOfNumberMax {
             System.out.print(i + " ");
         }
 
+        int max = result[0];
         for (int i = 0; i < result.length; i++) {
             if (result[i] > max) {
                 max = result[i];
