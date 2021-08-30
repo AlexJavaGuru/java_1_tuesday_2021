@@ -5,7 +5,7 @@ import java.util.Arrays;
 class TASK_27 {
     public static void main(String[] args) {
         int[] numbers = new int[10];
-        int bigNum = 0;
+        int bigNum = Integer.MIN_VALUE;
         for (int i = 0; i < 10; i++) {
             numbers[i] = (int) (Math.random() * 100);
             if (numbers[i] > bigNum) {

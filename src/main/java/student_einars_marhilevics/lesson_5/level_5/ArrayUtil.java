@@ -13,4 +13,25 @@ class ArrayUtil {
             array[i] = (int) (Math.random() * 100);
         }
     }
+    public void printArrayToConsole(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i] + " ");
+        }
+    }
+    public int findMaxNumber(int[] array) {
+        int bigNum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > bigNum) {
+                bigNum = array[i];
+            }
+        } return bigNum;
+    }
+    public int findMinNumber(int[] array) {
+        int smallNum = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < smallNum) {
+                smallNum = array[i];
+            }
+        } return smallNum;
+    }
 }
