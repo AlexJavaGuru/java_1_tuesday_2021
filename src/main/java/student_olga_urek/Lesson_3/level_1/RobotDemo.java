@@ -1,6 +1,6 @@
 package student_olga_urek.Lesson_3.level_1;
 //Task 3, 4, 5, 6
-public class RobotDemo {
+class RobotDemo {
     public static void main(String[] args) {
         // создайте экземпляр класса Robot вызвав конструктор класса
         // сохраните ссылку (указатель) на только, что созданный
