@@ -47,8 +47,5 @@ public class Calculator {
 Создайте по одному тесту на каждый из сценариев!
 
 */
-    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        if(firstNumber>secondNumber){return }
 
-    }
 }
