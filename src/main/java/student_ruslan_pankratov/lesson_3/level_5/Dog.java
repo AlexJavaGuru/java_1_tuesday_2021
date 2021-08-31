@@ -1,7 +1,7 @@
 package student_ruslan_pankratov.lesson_3.level_5;
 
 // Task 18 - 22
-
+//для комита изменений
 class Dog {
     private final String name;
     private int age;
