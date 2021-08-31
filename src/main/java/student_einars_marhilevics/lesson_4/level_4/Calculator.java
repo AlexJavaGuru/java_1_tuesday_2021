@@ -36,20 +36,11 @@ class Calculator {
     }
 
     int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
             return firstNumber;
-        } else if (firstNumber < secondNumber && secondNumber > thirdNumber) {
+        } else if ( secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             return secondNumber;
-        } else if (firstNumber < thirdNumber && secondNumber < thirdNumber) {
-            return thirdNumber;
-        } else if (firstNumber == secondNumber && secondNumber > thirdNumber) {
-            return firstNumber;
-        } else if (secondNumber == thirdNumber && secondNumber > firstNumber) {
-            return thirdNumber;
-        } else if (firstNumber == thirdNumber && firstNumber > secondNumber) {
-            return firstNumber;
-        } else  {
-            return firstNumber;
         }
+            return thirdNumber;
     }
 }
