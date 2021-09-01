@@ -3,7 +3,7 @@ package student_daniel.lesson2.level6;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_19 {
+class Task_19 {
 //    Прочитать статьи:
 //
 //    https://vc.ru/hr/98297-o-sobesedovanii-v-amazon-kakie-voprosy-budut-zadavat-na-intervyu-i-chto-nuzhno-znat-zaranee

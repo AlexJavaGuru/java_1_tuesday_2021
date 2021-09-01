@@ -2,7 +2,7 @@ package student_olga_urek.Lesson_3.level_3;
 
 //Task 12, 13
 
-public class RobotDemoTwo {
+class RobotDemoTwo {
     public static void main(String[] args) {
 
         RobotTwo myRobot = new RobotTwo("Robbie");
