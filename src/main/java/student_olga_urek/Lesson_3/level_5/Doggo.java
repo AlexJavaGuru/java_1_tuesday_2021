@@ -29,15 +29,19 @@ class Doggo {
         this.age =doggoAge;
         this.color = doggoColor;
     }
-
-    public void voice () {System.out.println(this.name + " " + this.name + " " + this.name + "!");}
-    public void voiceTwo() {System.out.println("My name is " + this.name + " and I am " + this.age + " years old! And I am " + this.color + "!");}
+//поправила форматирование, убрала this
+    public void voice () {
+        System.out.println(name + " " + name + " " + name + "!");
+    }
+    public void voiceTwo() {
+        System.out.println("My name is " + name + " and I am " + age + " years old! And I am " + color + "!");
+    }
     public int happyBirthday () {
-        this.age = this.age + 1;
+        age = age + 1;
         return age;
     }
     public void changeColor(String newColor) {
-        this.color = newColor;
+        color = newColor;
     }
 
 }

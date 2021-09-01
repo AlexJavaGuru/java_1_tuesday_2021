@@ -25,15 +25,20 @@ class Automobile {
         this.mileage = mileage + driveDistance;
         this.petrol = petrol - driveDistance * 0.1;
         return driveDistance;
-    }
+    } //Поправила форматирование
 
     public void paintCar (String newColor) {
         this.color = newColor;
     }
-
-    public void tankStatus () {System.out.println("Your car has " + petrol + " liters of petrol in the tank!");}
-    public void mileageStatus () {System.out.println("Your car has run for " + mileage + " kilometers!");}
-    public void whatColor () {System.out.println("Your car is " + color);}
+    public void tankStatus () {
+        System.out.println("Your car has " + petrol + " liters of petrol in the tank!");
+    }
+    public void mileageStatus () {
+        System.out.println("Your car has run for " + mileage + " kilometers!");
+    }
+    public void whatColor () {
+        System.out.println("Your car is " + color);
+    }
 
 }
 
