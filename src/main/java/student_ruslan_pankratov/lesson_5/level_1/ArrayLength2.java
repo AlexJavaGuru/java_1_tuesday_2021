@@ -1,11 +1,17 @@
-Найдите ошибку в программе и исправить её:
+package student_ruslan_pankratov.lesson_5.level_1;
 
+//Task_8
 class ArrayLength2 {
 
     public static void main(String[] args) {
-        int numbers = new int[2];
+        int[] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+
         System.out.println(numbers[0]);
         System.out.println(numbers[1]);
         System.out.println(numbers[2]);
     }
+
 }
