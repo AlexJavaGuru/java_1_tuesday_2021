@@ -1,4 +1,4 @@
-/*package student_ruslan_pankratov.leson_2.level_7;
+package student_ruslan_pankratov.leson_2.level_7;
 //Task_31
 class ProductDemo {
 
@@ -9,4 +9,4 @@ class ProductDemo {
         product.printInformation();
     }
 
-}*/
+}
