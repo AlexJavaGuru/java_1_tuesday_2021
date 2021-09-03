@@ -58,5 +58,11 @@ class DayOfTheWeekDetectorTest {
         String result = DayOfTheWeekDetector.findDayOfTheWeek(dayNumber);
         check(result.equals("Sunday"), "Not correct day number");
     }
-    void check()
+    void check(boolean condition, String testName) {
+        if (condition) {
+            System.out.println(testName  + " OK");
+        } else {
+            System.out.println(testName + " failed");
+        }
+    }
 }
