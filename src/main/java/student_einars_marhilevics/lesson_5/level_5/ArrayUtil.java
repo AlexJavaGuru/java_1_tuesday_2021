@@ -18,7 +18,7 @@ public class ArrayUtil {
         System.out.println(Arrays.toString(array));
     }
     public int findMaxNumber(int[] array) {
-        int bigNum = 0;
+        int bigNum = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > bigNum) {
                 bigNum = array[i];
