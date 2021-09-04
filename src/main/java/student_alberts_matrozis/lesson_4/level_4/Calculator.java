@@ -26,7 +26,7 @@ class Calculator {
     }
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         int[] arr = {firstNumber, secondNumber, thirdNumber};
-        int maxInt = 0;
+        int maxInt = firstNumber;
 
         for (int number : arr) {
             if (number > maxInt) {

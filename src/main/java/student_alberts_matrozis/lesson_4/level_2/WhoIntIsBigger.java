@@ -12,8 +12,8 @@ class WhoIntIsBigger {
         int num2 = s.nextInt();
         if (num > num2) {
             System.out.println("Наибольшее число это - " + num + "!");
-            return;
+        } else {
+            System.out.println("Наибольшее число это - " + num2 + "!");
         }
-        System.out.println("Наибольшее число это - " + num2 + "!");
     }
 }

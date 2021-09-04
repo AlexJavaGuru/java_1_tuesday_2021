@@ -12,8 +12,8 @@ class WhoIntIsLower {
         int num2 = s.nextInt();
         if (num < num2) {
             System.out.println("Наименьшее число это - " + num + "!");
-            return;
+        } else {
+            System.out.println("Наименьшее число это - " + num2 + "!");
         }
-        System.out.println("Наименьшее число это - " + num2 + "!");
     }
 }

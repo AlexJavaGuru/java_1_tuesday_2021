@@ -13,8 +13,8 @@ class IsEquals {
 
         if (num == num2) {
             System.out.println("Numbers are equals!");
-            return;
+        } else {
+            System.out.println("Numbers are different!");
         }
-        System.out.println("Numbers are different!");
     }
 }
