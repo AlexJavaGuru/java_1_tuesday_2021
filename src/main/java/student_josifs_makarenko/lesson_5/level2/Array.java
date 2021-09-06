@@ -4,10 +4,6 @@ import java.util.Random;
 
 public class Array {
 
-    int[] createArray() {
-        return new int[3];
-    }
-
     int[] showArray(int[] array) {
         return array;
     }

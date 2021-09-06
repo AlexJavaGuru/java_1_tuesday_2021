@@ -9,12 +9,11 @@ public class Array {
         return new int[size];
     }
 
-    int[] arrayWithYourNumbers (int[] array) {
+    void arrayWithYourNumbers (int[] array) {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
-        return array;
     }
 
     int[] arrayWithRandomNumbers (int[] array) {
