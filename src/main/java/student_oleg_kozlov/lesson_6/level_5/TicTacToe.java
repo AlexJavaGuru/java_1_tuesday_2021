@@ -2,7 +2,6 @@ package student_oleg_kozlov.lesson_6.level_5;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.RecursiveTask;
 
 // Task_22, Task_23, Task_24, Task_25, Task_26, Task_27, Task_28, Task_29, Task_30, Task_33
 class TicTacToe {
@@ -100,31 +99,25 @@ class TicTacToe {
     }
 
     public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
-        boolean result = true;
+        return diagonalPositionFromTopToBottom(field, playerToCheck) || diagonalPositionFromBottomToTop(field, playerToCheck);
+    }
 
+    private boolean diagonalPositionFromBottomToTop(int[][] field, int playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             if (field[i][i] != playerToCheck) {
-                result = false;
-                break;
+                return false;
             }
         }
+        return true;
+    }
 
-        if (!result) {
-            int i = 0;
-            int j = field.length - 1;
-            result = true;
-
-            while (i < field.length) {
-                if (field[i][j] != playerToCheck) {
-                    result = false;
-                    break;
-                }
-                i++;
-                j--;
+    private boolean diagonalPositionFromTopToBottom(int[][] field, int playerToCheck) {
+        for (int i = 0; i < field.length; i++) {
+            if (field[i][field.length - i - 1] != playerToCheck) {
+                return false;
             }
         }
-
-        return result;
+        return true;
     }
 
     public boolean isWinPosition(int[][] field, int playerToCheck) {
@@ -134,10 +127,6 @@ class TicTacToe {
     }
 
     public boolean isDrawPosition(int[][] field) {
-        if (isWinPosition(field, 0) || isWinPosition(field, 1)) {
-            return false;
-        }
-
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field.length; j++) {
                 if (field[i][j] == -1) {
