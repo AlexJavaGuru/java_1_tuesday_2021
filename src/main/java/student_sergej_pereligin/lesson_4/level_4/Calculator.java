@@ -29,11 +29,12 @@ public class Calculator {
     }
 
 
-
-
-        public boolean isEven(int number) {
-        if(number%2==0){return true;}
-        else{return false;}
+    public boolean isEven(int number) {
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 /*Добавьте в класс Calculator метод для определения
