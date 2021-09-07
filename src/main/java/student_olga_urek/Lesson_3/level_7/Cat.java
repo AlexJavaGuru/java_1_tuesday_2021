@@ -16,17 +16,17 @@ class Cat {
     }
 
     public void feedCat () {
-        this.weight = weight + 0.25;
-        this.isHungry = false;
+        weight = weight + 0.25;
+        isHungry = false;
     }
 
     public void playWithCat () {
-        this.weight = weight - 0.1;
-        this.isHungry = true;
+        weight = weight - 0.1;
+        isHungry = true;
     }
 
     public void catchMice () {
-        this.miceCaught = miceCaught + 1;
+        miceCaught = miceCaught + 1;
     }
 
     public void hungerStatus () {
