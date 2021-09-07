@@ -8,6 +8,12 @@ class Doggo {
     int age;
     String color;
 
+    public Doggo(String name, int age, String color) {
+        this.name = name;
+        this.age =age;
+        this.color = color;
+    }
+
     public String getName() {
         return name;
     }
@@ -24,22 +30,17 @@ class Doggo {
         this.age = age;
     }
 
-    public Doggo(String doggoName, int doggoAge, String doggoColor) {
-        this.name = doggoName;
-        this.age =doggoAge;
-        this.color = doggoColor;
-    }
-//поправила форматирование, убрала this
     public void voice () {
         System.out.println(name + " " + name + " " + name + "!");
     }
+
     public void voiceTwo() {
         System.out.println("My name is " + name + " and I am " + age + " years old! And I am " + color + "!");
     }
-    public int happyBirthday () {
+    public void happyBirthday () {
         age = age + 1;
-        return age;
     }
+
     public void changeColor(String newColor) {
         color = newColor;
     }
