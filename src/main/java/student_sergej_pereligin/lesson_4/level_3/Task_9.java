@@ -18,7 +18,7 @@ public class Task_9 {
         if (number > numberTwo && numberTwo > numberThree) {
             System.out.println("increasing");
         }
-        if (number < numberTwo && numberTwo < numberThree) {
+        else if (number < numberTwo && numberTwo < numberThree) {
             System.out.println("decreasing");
         } else {
             System.out.println("Neither increasing or decreasing order");

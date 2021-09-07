@@ -1,4 +1,5 @@
 package student_sergej_pereligin.lesson_4.level_4;
+
 public class Calculator {
 
     int sum(int firstNumber, int secondNumber) {
@@ -23,9 +24,7 @@ public class Calculator {
 
 
     int maxOfTwo(int firstNumber, int secondNumber) { // task 14
-        if (firstNumber > secondNumber) {
-            return firstNumber;
-        } else if (firstNumber < secondNumber) {
+        if (firstNumber < secondNumber) {
             return secondNumber;
         } else {
             return firstNumber;
@@ -34,15 +33,13 @@ public class Calculator {
     }
 
     public int maxofThree(int firstNumber, int secondNumber, int thirdNumber) {
-        if (firstNumber >= secondNumber && firstNumber > thirdNumber) {
-            return firstNumber;
-        } else if (secondNumber >= firstNumber && secondNumber > thirdNumber) {
+
+       if (secondNumber >= firstNumber && secondNumber > thirdNumber) {
             return secondNumber;
         } else if (secondNumber < firstNumber && firstNumber <= thirdNumber) {
             return thirdNumber;
         } else {
             return firstNumber;
-
         }
     }
 

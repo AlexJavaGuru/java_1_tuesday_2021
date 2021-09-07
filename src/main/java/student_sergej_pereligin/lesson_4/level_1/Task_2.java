@@ -13,8 +13,10 @@ public class Task_2 {
         if (number < 0) {
             System.out.println("Число отрицательное");
         }
-        if (number==0) {
-            System.out.println("Число равно 0"); }
-        else{
+        if (number == 0) {
+            System.out.println("Число равно 0");
+        } else {
             System.out.println("Число положительное");
-}}}
+        }
+    }
+}

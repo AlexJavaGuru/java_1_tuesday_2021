@@ -28,17 +28,17 @@ public class LightColorDetector {
 
         public String detect(int vaweLenght) {
 
-            if (vaweLenght > 380 && vaweLenght < 449) {
+            if (vaweLenght >= 380 && vaweLenght <= 449) {
                 return "Violet";
-            } else if (vaweLenght > 450 && vaweLenght < 494) {
+            } else if (vaweLenght >= 450 && vaweLenght <=494) {
                 return "Blue";
-            } else if (vaweLenght > 495 && vaweLenght < 569) {
+            } else if (vaweLenght >= 495 && vaweLenght <= 569) {
                 return "Green";
-            } else if (vaweLenght > 570 && vaweLenght < 589) {
+            } else if (vaweLenght >= 570 && vaweLenght <= 589) {
                 return "Yellow";
-            } else if (vaweLenght > 590 && vaweLenght < 619) {
+            } else if (vaweLenght >= 590 && vaweLenght <= 619) {
                 return "Orange";
-            } else if (vaweLenght > 620 && vaweLenght < 750) {
+            } else if (vaweLenght >= 620 && vaweLenght <= 750) {
                 return "Red";
             } else {
                 return "Invisible light";
