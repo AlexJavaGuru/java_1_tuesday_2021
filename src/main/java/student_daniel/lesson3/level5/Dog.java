@@ -30,12 +30,13 @@ class Dog {
     }
 
     //Task 20
-    void happyBirthday() {
-        System.out.println(age = age + 1);
+    public int happyBirthday() {
+        return age++;
     }
 
     //Task 22
     void changeColor(String newColor) {
         System.out.println(newColor);
+        System.out.println(happyBirthday());
     }
 }

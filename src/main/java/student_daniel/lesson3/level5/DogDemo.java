@@ -8,5 +8,7 @@ class DogDemo {
         dogName.voice();
         dogName.happyBirthday();
         dogName.changeColor("Green");
+        dogName.changeColor("Orange");
+        dogName.changeColor("Gold");
     }
 }
