@@ -57,52 +57,47 @@ class TicTacToe {
     }
 
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
-        boolean result = false;
-        int counter;
+        boolean isWin = false;
 
         for (int i = 0; i < field.length; i++) {
-            counter = 0;
+            isWin = true;
             for (int j = 0; j < field.length; j++) {
-                if (field[i][j] == playerToCheck) {
-                    counter++;
-                } else {
+                if (field[i][j] != playerToCheck) {
+                    isWin = false;
                     break;
                 }
             }
-            if (counter == 3) {
-                result = true;
+            if (isWin) {
                 break;
             }
         }
-        return result;
+        return isWin;
     }
 
     public boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
-        boolean result = false;
-        int counter;
+        boolean isWin = false;
 
         for (int j = 0; j < field.length; j++) {
-            counter = 0;
+            isWin = true;
             for (int i = 0; i < field.length; i++) {
-                if (field[i][j] == playerToCheck) {
-                    counter++;
-                } else {
+                if (field[i][j] != playerToCheck) {
+                    isWin = false;
                     break;
                 }
             }
-            if (counter == 3) {
-                result = true;
+            if (isWin) {
                 break;
             }
         }
-        return result;
+        return isWin;
     }
 
     public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
-        return diagonalPositionFromTopToBottom(field, playerToCheck) || diagonalPositionFromBottomToTop(field, playerToCheck);
+        return diagonalPositionFromTopToBottom(field, playerToCheck) ||
+                diagonalPositionFromBottomToTop(field, playerToCheck);
     }
 
-    private boolean diagonalPositionFromBottomToTop(int[][] field, int playerToCheck) {
+    private boolean diagonalPositionFromTopToBottom(int[][] field, int playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             if (field[i][i] != playerToCheck) {
                 return false;
@@ -111,7 +106,7 @@ class TicTacToe {
         return true;
     }
 
-    private boolean diagonalPositionFromTopToBottom(int[][] field, int playerToCheck) {
+    private boolean diagonalPositionFromBottomToTop(int[][] field, int playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             if (field[i][field.length - i - 1] != playerToCheck) {
                 return false;
@@ -259,8 +254,8 @@ class TicTacToe {
         int x, y;
 
         do {
-            x = random.nextInt(2);
-            y = random.nextInt(2);
+            x = random.nextInt(3);
+            y = random.nextInt(3);
             if (field[x][y] == -1) {
                 return new Move(x, y);
             }
