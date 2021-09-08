@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Array {
 
-    int[] showArray(int[] array) {
-        return array;
+    int[] createArray(int size) {
+        return new int[size];
     }
 
     int[] showArrayWithCodedNumbers (int[] array) {
