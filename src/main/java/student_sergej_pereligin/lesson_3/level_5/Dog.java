@@ -1,7 +1,5 @@
 package student_sergej_pereligin.lesson_3.level_5;
 
-import java.awt.*;
-
 public class Dog {
     String name;
     int age;
