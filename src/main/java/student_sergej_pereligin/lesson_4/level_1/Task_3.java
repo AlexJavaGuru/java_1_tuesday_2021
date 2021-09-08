@@ -10,28 +10,28 @@ public class Task_3 {
         if (number == 1) {
             System.out.println("Понедельник");
         }
-        if (number == 1) {
+        else if (number == 1) {
             System.out.println("Понедельник");
         }
-        if (number == 2) {
+        else if (number == 2) {
             System.out.println("Вторник");
         }
-        if (number == 3) {
+        else if (number == 3) {
             System.out.println("Среда");
         }
-        if (number == 4) {
+        else if (number == 4) {
             System.out.println("Четверг");
         }
-        if (number == 5) {
+        else if (number == 5) {
             System.out.println("Пятница");
         }
-        if (number == 6) {
+        else if (number == 6) {
             System.out.println("Суббота");
         }
-        if (number == 7) {
+        else if (number == 7) {
             System.out.println("Воскресенье");
         }
-        if (number > 7 || number < 0) {
+        else if (number > 7 || number < 0) {
             System.out.println("Такого дня нет");
         }
     }
