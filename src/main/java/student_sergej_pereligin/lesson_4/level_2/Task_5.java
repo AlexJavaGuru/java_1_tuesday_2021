@@ -8,14 +8,14 @@ import java.util.Scanner;
 public class Task_5 {
     public static void main(String[] args) {
         System.out.println("Введите число первое:");
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         System.out.println("Введите число второе:");
-        int numberTwo= scanner.nextInt();
-        if(number>numberTwo){
-            System.out.println("Число "+number+ " наибольшое");
-    }
-        else{
-            System.out.println("Число "+numberTwo+" наибольшое");
+        int numberTwo = scanner.nextInt();
+        if (number > numberTwo) {
+            System.out.println("Число " + number + " наибольшое");
+        } else {
+            System.out.println("Число " + numberTwo + " наибольшое");
         }
-}}
+    }
+}

@@ -21,7 +21,7 @@ public class Task_10 {
         if (number > numberTwo && numberTwo > numberThree) {
             System.out.println(number);
         }
-        if (number < numberTwo && numberTwo < numberThree) {
+        else if (number < numberTwo && numberTwo < numberThree) {
             System.out.println(numberThree);
         } else {
             System.out.println(numberTwo);
