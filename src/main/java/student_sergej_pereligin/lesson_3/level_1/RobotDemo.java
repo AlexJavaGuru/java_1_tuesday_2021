@@ -1,4 +1,6 @@
-package student_sergej_pereligin.lesson_3;
+package student_sergej_pereligin.lesson_3.level_1;
+
+import student_sergej_pereligin.lesson_3.level_1.Robot;
 
 public class RobotDemo {
     public static void main(String[] args) {
