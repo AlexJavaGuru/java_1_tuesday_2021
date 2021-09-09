@@ -31,25 +31,25 @@ class ArrayService {
         }
         return result;
     }
-    int[] replaceAll(int[] arr, int numberToReplace, int newNumber) {
+    int replaceAll(int[] arr, int numberToReplace, int newNumber) {
+        int counter = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == numberToReplace) {
                 arr[i] = newNumber;
+                counter++;
             }
         }
-        return arr;
+        return counter;
     }
-    void revert(int[] arr) {
-        for (int i = 0; i < arr.length / 2; i++) {
-            int temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+    void revert(int[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
         }
     }
     void sort(int[] arr) {
         Arrays.sort(arr);
-        for(int i = 0; i <  arr.length; i++) {
-            System.out.print(arr[i] + "  ");
-        }
     }
 }
+
