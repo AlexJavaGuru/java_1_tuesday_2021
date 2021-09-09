@@ -1,5 +1,7 @@
 package student_einars_marhilevics.lesson_6.level_3;
 
+import java.util.Arrays;
+
 class ArrayService {
     boolean containsNumber(int[] array, int numberToSearch) {
         boolean result = false;
@@ -42,6 +44,12 @@ class ArrayService {
             int temp = arr[i];
             arr[i] = arr[arr.length - i - 1];
             arr[arr.length - i - 1] = temp;
+        }
+    }
+    void sort(int[] arr) {
+        Arrays.sort(arr);
+        for(int i = 0; i <  arr.length; i++) {
+            System.out.print(arr[i] + "  ");
         }
     }
 }
