@@ -3,7 +3,7 @@ package student_daniel.lesson2.level4;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_13 {
+class Task_13 {
 //    Как откомпилировать код с помощью JDK компилятора javac,
 //    без помощи среды разработки (из консоли)?
 //

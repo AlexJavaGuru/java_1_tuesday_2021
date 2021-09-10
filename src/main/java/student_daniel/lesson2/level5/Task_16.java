@@ -3,7 +3,7 @@ package student_daniel.lesson2.level5;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_16 {
+class Task_16 {
 //    При программировании более удобно и быстро выполнять все
 //    действия с помощью клавиатуры, не переключаясь на мышку.
 //
