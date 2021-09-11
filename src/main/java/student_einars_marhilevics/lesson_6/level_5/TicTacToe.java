@@ -78,4 +78,7 @@ class TicTacToe {
         }
         return field;
     }
+    /*public Move getNextMove() {
+
+    }*/
 }
