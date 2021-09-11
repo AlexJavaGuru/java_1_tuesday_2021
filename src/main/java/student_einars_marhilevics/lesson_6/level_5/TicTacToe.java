@@ -25,4 +25,16 @@ class TicTacToe {
         }
         return win;
     }
+    boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
+        boolean win = false;
+        for (int i = 0; i < field.length; i++) {
+            if (playerToCheck == field[0][i] && playerToCheck == field[1][i] && playerToCheck == field[2][i]) {
+                win = true;
+            }
+            else {
+                win = false;
+            }
+        }
+        return win;
+    }
 }
