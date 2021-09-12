@@ -99,7 +99,11 @@ class TicTacToe {
             System.out.println();
         }
     }
-
+    /*void compMove (int[][] field, int player) {
+        for (int i = 0; i < field.length; i++) {
+            if ()
+        }
+    }*/
     public void play() {
         int[][] field = createField();
         while (true) {
