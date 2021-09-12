@@ -1,5 +1,6 @@
 package student_einars_marhilevics.lesson_6.level_5;
 
+import java.util.Random;
 import java.util.Scanner;
 
 class TicTacToe {
@@ -99,11 +100,22 @@ class TicTacToe {
             System.out.println();
         }
     }
-    /*void compMove (int[][] field, int player) {
-        for (int i = 0; i < field.length; i++) {
-            if ()
-        }
-    }*/
+    Move compMove(int[][] field) {
+        Random random = new Random();
+        int x;
+        int y;
+
+        do {
+            x = random.nextInt(3);
+            y = random.nextInt(3);
+            if (field[x][y] == -1) {
+                return new Move(x, y);
+            }
+        } while (true);
+    }
+    Move getCompMove(int[][] field, int player) {
+        return compMove(field);
+    }
     public void play() {
         int[][] field = createField();
         while (true) {
@@ -118,8 +130,7 @@ class TicTacToe {
                 System.out.println("DRAW!");
                 break;
             }
-            printFieldToConsole(field);
-            Move move1 = getNextMove();
+            Move move1 = getCompMove(field,1);
             field[move1.getX()][move1.getY()] = 1;
             if (isWinPosition(field, 1)) {
                 System.out.println("Player 1 WIN!");
