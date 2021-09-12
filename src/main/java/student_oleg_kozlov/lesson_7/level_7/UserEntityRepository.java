@@ -77,7 +77,9 @@ class UserEntityRepository {
             tmp[j] = data[i];
             j++;
         }
-        data = tmp;
+        if (succeed) {
+            data = tmp;
+        }
         return succeed;
     }
 
