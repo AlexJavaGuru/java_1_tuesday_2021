@@ -22,7 +22,6 @@ class TicTacToe {
         return win;
     }
 
-
     boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
         boolean win = false;
         for (int i = 0; i < field.length; i++) {
@@ -129,7 +128,6 @@ class TicTacToe {
                 System.out.println("DRAW!");
                 break;
             }
-
             printFieldToConsole(field);
             Move move1 = getNextMove();
             field[move1.getX()][move1.getY()] = 1;
