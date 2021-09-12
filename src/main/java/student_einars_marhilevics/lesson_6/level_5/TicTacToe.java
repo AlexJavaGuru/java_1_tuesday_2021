@@ -11,12 +11,9 @@ class TicTacToe {
     boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
         boolean win = false;
         for (int i = 0; i < field.length; i++) {
-            if (field[i][0] == playerToCheck) {
-                if (field[i][1] == playerToCheck) {
-                    if (field[i][2] == playerToCheck) {
-                        win = true;
-                    }
-                }
+            if (field[i][0] == field[i][1] && field[i][1] == field[i][2]
+                    && field[i][0] == playerToCheck) {
+                win = true;
             }
         }
         return win;
@@ -25,12 +22,9 @@ class TicTacToe {
     boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
         boolean win = false;
         for (int i = 0; i < field.length; i++) {
-            if (field[0][i] == playerToCheck) {
-                if (field[1][i] == playerToCheck) {
-                    if (field[2][i] == playerToCheck) {
-                        win = true;
-                    }
-                }
+            if (field[0][i] == field[1][i] && field[1][i] == field[2][i]
+                    && field[0][i] == playerToCheck) {
+                win = true;
             }
         }
         return win;
@@ -38,19 +32,11 @@ class TicTacToe {
 
     boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
         boolean win = false;
-        if (field[0][0] == playerToCheck) {
-            if (field[1][1] == playerToCheck) {
-                if (field[2][2] == playerToCheck) {
-                    win = true;
-                }
-            }
-        }
-        if (field[0][2] == playerToCheck) {
-            if (field[1][1] == playerToCheck) {
-                if (field[2][0] == playerToCheck) {
-                    win = true;
-                }
-            }
+
+        if ((field[0][0] == field[1][1] && field[0][0] == field[2][2]
+                && field[0][0] == playerToCheck) || (field[0][2] == field[1][1] && field[0][2] == field[2][0]
+                && field[0][2] == playerToCheck)) {
+            win = true;
         }
         return win;
     }
@@ -140,6 +126,7 @@ class TicTacToe {
                 break;
             }
         }
+        printFieldToConsole(field);
     }
 }
 
