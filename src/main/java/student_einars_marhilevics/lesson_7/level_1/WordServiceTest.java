@@ -13,8 +13,8 @@ class WordServiceTest {
     }
     void removeSymbolsAndSpaces() {
         WordService wordService = new WordService();
-        String string = "I will go,You-will go-but they will,stay";
-        String expectedResult = "I will go You will go but they will stay";
+        String string = "I will go Home,You-will go-home they will,stay Home";
+        String expectedResult = "I will go Home You will go home they will stay Home";
         String result = wordService.removeSymbolsAndSpaces(string);
         check(result.equals(expectedResult), "removeSymbolsAndSpaces");
     }
@@ -27,8 +27,8 @@ class WordServiceTest {
     }
     void splitString() {
         WordService wordService = new WordService();
-        String string = "I will go,You will Go-but they Will stay";
-        String[] expectedResult = {"i", "will", "go", "you", "will", "go", "but", "they", "will", "stay"};
+        String string = "I will go Home,You will Go-home,they Will stay Home";
+        String[] expectedResult = {"i", "will", "go", "home", "you", "will", "go", "home", "they", "will", "stay", "home"};
         String[] result = wordService.splitString(string);
         check(Arrays.equals(result, expectedResult), "splitString");
     }

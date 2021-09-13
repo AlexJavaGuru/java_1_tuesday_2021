@@ -5,8 +5,9 @@ import java.util.Arrays;
 
 class WordService {
     String findMostFrequentWord(String text) {
-        String textWithoutSymbols = toLowerCase(text);
-        String[] split = splitString(textWithoutSymbols);
+        //String textWithoutSymbols = removeSymbolsAndSpaces(text);
+        //String[] split = splitString(textWithoutSymbols);
+        String[] split = splitString(text);
         Arrays.sort(split);
         int max = 0;
         int count = 1;
@@ -32,12 +33,12 @@ class WordService {
     }
 
     String toLowerCase(String str) {
-        String lowerCase = str.toLowerCase();
-        return lowerCase;
+        return str.toLowerCase();
     }
 
     public String[] splitString(String str) {
-        String myString = removeSymbolsAndSpaces(str.toLowerCase());
+        String myString = removeSymbolsAndSpaces(toLowerCase(str));
         return myString.split(" ");
     }
 }
+//str.toLowerCase
