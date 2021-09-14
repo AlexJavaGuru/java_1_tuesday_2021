@@ -125,7 +125,8 @@ public class TicTakToe {
     public void play() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("We need a field!");
-        System.out.println("Input X and Y for field ((5;5) is minimal)");
+        System.out.println("Input X and Y for field (like 5:5, 6:6...)");
+        System.out.println("Field MUST be larger or equal 5:5!");
         String[][] field;
         field = createField(scanner.nextInt(), scanner.nextInt());
 
