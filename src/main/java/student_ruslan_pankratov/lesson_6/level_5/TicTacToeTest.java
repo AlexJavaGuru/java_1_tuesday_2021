@@ -22,16 +22,11 @@ class TicTacToeTest {
 
   void isWinPositionForHorizontalsTestFalse(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 1;
-        field[0][2] = 1;
-        field[1][0] = -1;
-        field[1][1] = -1;
-        field[1][2] = -1;
-        field[2][0] = -1;
-        field[2][1] = 0;
-        field[2][2] = 0;
+
+      int[][] field = {
+              {1,1,1},
+              {-1,-1,-1},
+              {-1,0,0}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPositionForHorizontals(field, firstPlayer);
@@ -43,17 +38,11 @@ class TicTacToeTest {
 
     void isWinPositionForHorizontalsTestTrue(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 1;
-        field[0][2] = 1;
-        field[1][0] = -1;
-        field[1][1] = -1;
-        field[1][2] = -1;
-        field[2][0] = -1;
-        field[2][1] = 0;
-        field[2][2] = 0;
 
+        int[][] field = {
+                {1,1,1},
+                {-1,-1,-1},
+                {-1,0,0}};
         int firstPlayer = 1;
         boolean result = ticTacToe.isWinPositionForHorizontals(field, firstPlayer);
         boolean expectedResult = true;
@@ -63,16 +52,11 @@ class TicTacToeTest {
     }
     void isWinPositionForVerticalsTestTrue(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = -1;
-        field[1][0] = 1;
-        field[1][1] = -1;
-        field[1][2] = -1;
-        field[2][0] = 1;
-        field[2][1] = 0;
-        field[2][2] = 0;
+
+        int[][] field = {
+                {1,0,-1},
+                {1,-1,-1},
+                {1,0,0}};
 
         int firstPlayer = 1;
         boolean result = ticTacToe.isWinPositionForVerticals(field, firstPlayer);
@@ -83,16 +67,11 @@ class TicTacToeTest {
 
     void isWinPositionForVerticalsTestFalse(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = -1;
-        field[1][0] = 1;
-        field[1][1] = -1;
-        field[1][2] = -1;
-        field[2][0] = 1;
-        field[2][1] = 0;
-        field[2][2] = 0;
+
+        int[][] field = {
+                {1,0,-1},
+                {1,-1,-1},
+                {1,0,0}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPositionForVerticals(field, firstPlayer);
@@ -108,16 +87,11 @@ class TicTacToeTest {
 
     void isWinPositionForDiagonalsTestTrue(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = 0;
-        field[1][0] = 1;
-        field[1][1] = 0;
-        field[1][2] = -1;
-        field[2][0] = 0;
-        field[2][1] = 1;
-        field[2][2] = -1;
+
+        int[][] field = {
+                {1,0,0},
+                {1,0,-1},
+                {0,1,-1}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPositionForDiagonals(field, firstPlayer);
@@ -130,16 +104,11 @@ class TicTacToeTest {
 
     void isWinPositionForDiagonalsTestFalse(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = 1;
-        field[1][0] = 1;
-        field[1][1] = 0;
-        field[1][2] = -1;
-        field[2][0] = 0;
-        field[2][1] = 1;
-        field[2][2] = -1;
+
+        int[][] field = {
+                {1,0,-1},
+                {1,0,-1},
+                {0,1,-1}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPositionForDiagonals(field, firstPlayer);
@@ -151,16 +120,11 @@ class TicTacToeTest {
 
     void isWinPositionTestTrue(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = 0;
-        field[1][0] = 1;
-        field[1][1] = 0;
-        field[1][2] = -1;
-        field[2][0] = 0;
-        field[2][1] = 1;
-        field[2][2] = -1;
+
+        int[][] field = {
+                {1,0,0},
+                {1,0,-1},
+                {0,1,-1}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPosition(field, firstPlayer);
@@ -173,16 +137,11 @@ class TicTacToeTest {
 
     void isWinPositionTestFalse(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 1;
-        field[0][2] = 1;
-        field[1][0] = 1;
-        field[1][1] = 1;
-        field[1][2] = -1;
-        field[2][0] = 1;
-        field[2][1] = 1;
-        field[2][2] = -1;
+
+        int[][] field = {
+                {1,1,-1},
+                {1,1,-1},
+                {1,1,-1}};
 
         int firstPlayer = 0;
         boolean result = ticTacToe.isWinPosition(field, firstPlayer);
@@ -191,23 +150,14 @@ class TicTacToeTest {
         isWinPositionTestMethod(result, expectedResult, "isWinPositionFalse");
     }
 
-    //  [00][01][02]
-    // [10][11][12]
-    // [20][21][22]
-
 
     void isDrawPositionTestTrue(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = 0;
-        field[0][2] = 1;
-        field[1][0] = 0;
-        field[1][1] = 1;
-        field[1][2] = 1;
-        field[2][0] = 0;
-        field[2][1] = 1;
-        field[2][2] = 0;
+
+        int[][] field = {
+                {1,0,1},
+                {0,1,1},
+                {0,1,0}};
 
         boolean result = ticTacToe.isDrawPosition(field);
         boolean expectedResult = true;
@@ -219,16 +169,12 @@ class TicTacToeTest {
 
     void isDrawPositionTestFalse(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] field = new int[3][3];
-        field[0][0] = 1;
-        field[0][1] = -1;
-        field[0][2] = 1;
-        field[1][0] = 0;
-        field[1][1] = 1;
-        field[1][2] = 1;
-        field[2][0] = 0;
-        field[2][1] = 1;
-        field[2][2] = 0;
+
+
+        int[][] field = {
+                {1,-1,1},
+                {0,1,1},
+                {0,1,0}};
 
         boolean result = ticTacToe.isDrawPosition(field);
         boolean expectedResult = false;
@@ -239,16 +185,11 @@ class TicTacToeTest {
 
     void createFieldTest(){
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] expectedResult = new int[3][3];
-        expectedResult[0][0] = -1;
-        expectedResult[0][1] = -1;
-        expectedResult[0][2] = -1;
-        expectedResult[1][0] = -1;
-        expectedResult[1][1] = -1;
-        expectedResult[1][2] = -1;
-        expectedResult[2][0] = -1;
-        expectedResult[2][1] = -1;
-        expectedResult[2][2] = -1;
+
+        int[][] expectedResult = {
+                {-1,-1,-1},
+                {-1,-1,-1},
+                {-1,-1,-1}};
 
         int[][] result = ticTacToe.createField();
 

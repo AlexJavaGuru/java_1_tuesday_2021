@@ -4,17 +4,36 @@ package student_ruslan_pankratov.lesson_6.level_5;
 class RobotAI {
 
     public int[][] copy(int[][] arr) {
+
         updateArrayByRobotStep(arr);
         return arr;
     }
-
+    static boolean wasMove = false;
     private void updateArrayByRobotStep(int[][] arr) {
-        checkOpponentsHorizontals(arr);
+        wasMove = false;
+        if (!wasMove) {
+            checkOpponentsHorizontals(arr);
+        }
+        if (!wasMove) {
+            checkOpponentsVerticals(arr);
+        }
+        if (!wasMove) {
+            checkOpponentsDiagonals(arr);
+        }
+        if (!wasMove) {
+            checkRobotsWinPositionHorizontally(arr);
+        }
+        if (!wasMove) {
+            checkRobotsWinPositionVertically(arr);
+        }
+        if (!wasMove) {
+            checkRobotsWinPositionDiagonally(arr);
+        }
     }
 
 
     void checkOpponentsHorizontals(int[][] arr) {
-        boolean wasMove = false;
+
         for (int i = 0; i < arr.length; i++) {
             int res = 0;
             for (int j = 0; j < arr.length; j++) {
@@ -32,12 +51,10 @@ class RobotAI {
                 }
             }
         }
-        if (!wasMove) {
-            checkOpponentsVerticals(arr, wasMove);
-        }
+
     }
 
-    void checkOpponentsVerticals(int[][] arr, boolean wasMove) {
+    void checkOpponentsVerticals(int[][] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             int res = 0;
@@ -59,13 +76,10 @@ class RobotAI {
             }
 
         }
-        if (!wasMove) {
-            checkOpponentsDiagonals(arr, wasMove);
-        }
     }
 
 
-    void checkOpponentsDiagonals(int[][] arr, boolean wasMove) {
+    void checkOpponentsDiagonals(int[][] arr) {
         int resultOne = 0;
         int resultTwo = 0;
         if (arr[0][0] == 0) {
@@ -113,13 +127,11 @@ class RobotAI {
                 }
             }
         }
-        if (!wasMove) {
-            checkRobotsWinPositionHorizontally(arr, wasMove);
-        }
+
     }
 
 
-    void checkRobotsWinPositionHorizontally(int[][] arr, boolean wasMove) {
+    void checkRobotsWinPositionHorizontally(int[][] arr) {
         int empty = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -137,12 +149,10 @@ class RobotAI {
                 }
             }
         }
-        if (!wasMove) {
-            checkRobotsWinPositionVertically(arr, wasMove);
-        }
+
     }
 
-    void checkRobotsWinPositionVertically(int[][] arr, boolean wasMove) {
+    void checkRobotsWinPositionVertically(int[][] arr) {
         int empty = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -162,9 +172,7 @@ class RobotAI {
                 }
             }
         }
-        if (!wasMove) {
-            checkRobotsWinPositionDiagonally(arr);
-        }
+
     }
 
 
