@@ -46,10 +46,31 @@ class CreditCard {
         }
         return true;
     }
+    boolean withdraw (int pinCode, int amount) {
+        if (this.pinCode != pinCode) {
+            return false;
+        } else {
+            if (cardBalance > 0) {
+                amount = decreaseBalance(amount);
+            }
+            if (amount > 0) {
+                cardDebt += amount;
+            }
+        }
+        return true;
+    }
     int decreaseDebt(int amount) {
         int dif = 0;
         cardDebt -= amount;
         if (cardDebt < 0) {
+            dif = cardDebt * (-1);
+        }
+        return dif;
+    }
+    int decreaseBalance(int amount) {
+        int dif = 0;
+        cardBalance -= amount;
+        if (cardBalance < 0) {
             dif = cardDebt * (-1);
         }
         return dif;
