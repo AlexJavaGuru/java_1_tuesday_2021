@@ -19,6 +19,10 @@ class CreditCard {
         return cardBalance;
     }
 
+    public void setCreditLimit(int creditLimit) {
+        this.creditLimit = creditLimit;
+    }
+
     public int getCreditLimit() {
         return creditLimit;
     }
@@ -26,36 +30,43 @@ class CreditCard {
     public int getCardDebt() {
         return cardDebt;
     }
-    public CreditCard (int cardNumber, int pinCode) {
+
+    public CreditCard(int cardNumber, int pinCode) {
         this.cardNumber = cardNumber;
         this.pinCode = pinCode;
         cardBalance = 0;
         cardDebt = 0;
         creditLimit = 0;
     }
+
     int deposit(int pinCode, int amount) {
-        if (this.pinCode != pinCode) {
-            System.out.println("incorrect PIN");
-        } else {
+        if (this.pinCode == pinCode) {
             if (cardDebt > 0) {
                 amount = decreaseDebt(amount);
             }
             if (amount > 0) {
                 cardBalance += amount;
             }
+            return cardBalance;
+        } else {
+            System.out.println("incorrect PIN");
         }
         return cardBalance;
     }
+
+
     int withdraw (int pinCode, int amount) {
-        if (this.pinCode != pinCode) {
-            System.out.println("incorrect PIN");
-        } else {
+        if (this.pinCode == pinCode) {
             if (cardBalance > 0) {
                 amount = decreaseBalance(amount);
             }
             if (amount > 0) {
                 cardDebt += amount;
             }
+            return cardBalance;
+        }
+        else {
+            System.out.println("incorrect PIN");
         }
         return cardBalance;
     }
