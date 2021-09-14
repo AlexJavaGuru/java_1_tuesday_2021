@@ -33,9 +33,9 @@ class CreditCard {
         cardDebt = 0;
         creditLimit = 0;
     }
-    boolean deposit(int pinCode, int amount) {
+    int deposit(int pinCode, int amount) {
         if (this.pinCode != pinCode) {
-            return false;
+            System.out.println("incorrect PIN");
         } else {
             if (cardDebt > 0) {
                 amount = decreaseDebt(amount);
@@ -44,11 +44,11 @@ class CreditCard {
                 cardBalance += amount;
             }
         }
-        return true;
+        return cardBalance;
     }
-    boolean withdraw (int pinCode, int amount) {
+    int withdraw (int pinCode, int amount) {
         if (this.pinCode != pinCode) {
-            return false;
+            System.out.println("incorrect PIN");
         } else {
             if (cardBalance > 0) {
                 amount = decreaseBalance(amount);
@@ -57,7 +57,7 @@ class CreditCard {
                 cardDebt += amount;
             }
         }
-        return true;
+        return cardBalance;
     }
     int decreaseDebt(int amount) {
         int dif = 0;
