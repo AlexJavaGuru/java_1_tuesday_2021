@@ -15,6 +15,7 @@ public class CreditCardTest {
     }
     void depositTwo() {
         CreditCard creditCard = new CreditCard(12345,1234);
+        creditCard.setCreditLimit(300);
         creditCard.withdraw(1234,200);
         int result = creditCard.deposit(1234,600);
         check(result == 400, "depositTwo");
@@ -27,9 +28,10 @@ public class CreditCardTest {
     }
     void withdrawTwo() {
         CreditCard creditCard = new CreditCard(1234,1234);
+        creditCard.setCreditLimit(300);
         creditCard.deposit(1234,100);
-        int result = creditCard.withdraw(1234,300);
-        check(result == -200, "withdrawTwo");
+        int result = creditCard.withdraw(1234,500);
+        check(result == -400, "withdrawTwo");
     }
     void check (boolean condition, String testName) {
         if (condition) {

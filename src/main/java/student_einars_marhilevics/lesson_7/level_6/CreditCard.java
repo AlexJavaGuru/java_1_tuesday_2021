@@ -41,7 +41,7 @@ class CreditCard {
 
     int deposit(int pinCode, int amount) {
         if (this.pinCode == pinCode) {
-            if (cardDebt > 0) {
+            if (cardDebt > 0 && cardDebt <= creditLimit) {
                 amount = decreaseDebt(amount);
             }
             if (amount > 0) {
@@ -60,7 +60,7 @@ class CreditCard {
             if (cardBalance > 0) {
                 amount = decreaseBalance(amount);
             }
-            if (amount > 0) {
+            if (amount > 0 && amount <= creditLimit && cardDebt <= creditLimit) {
                 cardDebt += amount;
             }
             return cardBalance;
@@ -68,7 +68,7 @@ class CreditCard {
         else {
             System.out.println("incorrect PIN");
         }
-        return cardBalance;
+        return creditLimit;
     }
     int decreaseDebt(int amount) {
         int dif = 0;
@@ -81,7 +81,7 @@ class CreditCard {
     int decreaseBalance(int amount) {
         int dif = 0;
         cardBalance -= amount;
-        if (cardBalance < 0) {
+        if (cardBalance < 0 && cardDebt <= creditLimit) {
             dif = cardDebt * (-1);
         }
         return dif;
