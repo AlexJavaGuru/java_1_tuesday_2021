@@ -5,8 +5,6 @@ import java.util.Arrays;
 
 class WordService {
     String findMostFrequentWord(String text) {
-        //String textWithoutSymbols = removeSymbolsAndSpaces(text);
-        //String[] split = splitString(textWithoutSymbols);
         String[] split = splitString(text);
         Arrays.sort(split);
         int max = 0;

@@ -2,15 +2,16 @@ package student_einars_marhilevics.lesson_7.level_7;
 
 class WordService {
     public String findMostFrequentWord(String text) {
+        String myText = text.toLowerCase();
         String[] textArray;
         int[] wordCountArray;
-        textArray = text.split(" ");
+        textArray = myText.split(" ");
         wordCountArray = new int[textArray.length];
 
         int wordCounter = 0;
         for (int wordCount = 0; wordCount < textArray.length; wordCount++) {
             for (String s : textArray) {
-                if (textArray[wordCount].equals(s)) {
+                if (textArray[wordCount].equals(s) && !textArray[wordCount].equals("")) {
                     wordCounter++;
                 }
             }
@@ -19,12 +20,11 @@ class WordService {
         }
 
         int max = 0;
-        for (int count =0; count < wordCountArray.length; count++) {
+        for (int count = 0; count < wordCountArray.length; count++) {
             if (wordCountArray[count] > max) {
                 max = count;
             }
         }
         return textArray[max];
     }
-
 }
