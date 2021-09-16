@@ -16,7 +16,6 @@ public class Task_30 {
         Random random = new Random();
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = random.nextInt(100);
-
         }
 
         System.out.println("Element of array are: " + Arrays.toString(arrays));

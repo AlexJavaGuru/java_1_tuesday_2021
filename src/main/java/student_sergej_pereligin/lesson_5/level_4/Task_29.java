@@ -10,7 +10,7 @@ import java.util.Random;
 - найдите все чётные числа в массиве и выведети их на консоль.*/
 public class Task_29 {
 
-        public static void main (String[]args){
+    public static void main(String[] args) {
 
         int[] arrays = new int[7];
 
@@ -22,13 +22,14 @@ public class Task_29 {
 
         System.out.println("Element of array are: " + Arrays.toString(arrays));
 
-            int isEven;
-            for (int i = 0; i < arrays.length; i++)
-                if (arrays[i] % 2 == 0) {
-                    isEven = arrays[i];
+        int isEven;
+        for (int i = 0; i < arrays.length; i++)
+            if (arrays[i] % 2 == 0) {
+                isEven = arrays[i];
 
-            System.out.println("isEven:: " + isEven);
-        }}
-
+                System.out.println("isEven:: " + isEven);
+            }
     }
+
+}
 

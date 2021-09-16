@@ -11,10 +11,10 @@ import java.util.Scanner;
 - распечатайте на консоль все элементы массива.*/
 public class Task_26 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Input the length of array");
-    int size = scanner.nextInt();
-    int[] arrays = new int[size];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input the length of array");
+        int size = scanner.nextInt();
+        int[] arrays = new int[size];
 
 
         Random random = new Random();
@@ -23,7 +23,7 @@ public class Task_26 {
 
         }
 
-    System.out.println("Element of array are: "+Arrays.toString(arrays));
+        System.out.println("Element of array are: " + Arrays.toString(arrays));
 
-}
+    }
 }

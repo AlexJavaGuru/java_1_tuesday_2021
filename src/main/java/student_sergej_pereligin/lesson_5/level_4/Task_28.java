@@ -8,22 +8,23 @@ import java.util.Random;
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива
 - найдите наименьшее число в массиве и выведети его на консол*/
-public class Task_28 { public static void main(String[] args) {
+public class Task_28 {
+    public static void main(String[] args) {
 
-    int[] arrays = new int[7];
+        int[] arrays = new int[7];
 
-    Random random = new Random();
-    for (int i = 0; i < arrays.length; i++) {
-        arrays[i] = random.nextInt(100);
+        Random random = new Random();
+        for (int i = 0; i < arrays.length; i++) {
+            arrays[i] = random.nextInt(100);
 
-    }
-
-    System.out.println("Element of array are: "+ Arrays.toString(arrays));
-    int min = arrays[0];
-    for (int i = 0;i < arrays.length; i++)
-        if(arrays[i] < min){
-            min = arrays[i];
         }
-    System.out.println("Max of array is: "+ min);
-}
+
+        System.out.println("Element of array are: " + Arrays.toString(arrays));
+        int min = arrays[0];
+        for (int i = 0; i < arrays.length; i++)
+            if (arrays[i] < min) {
+                min = arrays[i];
+            }
+        System.out.println("Max of array is: " + min);
+    }
 }

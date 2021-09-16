@@ -15,18 +15,18 @@ import java.util.Random;
 
 public class Task_15 {
     public static void main(String[] args) {
-        int[] recd = new int[3];
+        int[] number = new int[3];
         int sum = 0;
         Random random = new Random();
-        for (int i = 0; i < recd.length; i++) {
-            recd[i] = random.nextInt(100);
-            sum=sum+recd[i];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = random.nextInt(100);
+            sum=sum+number[i];
 
         }
-        System.out.println("Arrrays: "+ Arrays.toString(recd));
-        for (int i = 0; i < recd.length; i++) {
-            recd[i] +=  2;
-            System.out.println("Double numbers: "+recd[i]);
+        System.out.println("Arrrays: "+ Arrays.toString(number));
+        for (int i = 0; i < number.length; i++) {
+            number[i] +=  2;
+            System.out.println("Double numbers: "+number[i]);
         }
     }
 }
