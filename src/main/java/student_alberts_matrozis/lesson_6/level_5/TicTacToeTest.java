@@ -1,6 +1,6 @@
 package student_alberts_matrozis.lesson_6.level_5;
 
-import student_alberts_matrozis.albertsUtils.Utils;
+import static student_alberts_matrozis.albertsUtils.Utils.*;
 
 class TicTacToeTest {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ class TicTacToeTest {
         };
         boolean receivedResult = subject.isWinPositionForVerticals(field, 1);
         boolean exceptedResult = true;
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void horizontalWinPositionTest() {
@@ -33,7 +33,7 @@ class TicTacToeTest {
         };
         boolean receivedResult = subject.isWinPositionForHorizontals(field, 1);
         boolean exceptedResult = true;
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
     public void diagonalWinPositionTest() {
         TicTacToe subject = new TicTacToe();
@@ -44,7 +44,7 @@ class TicTacToeTest {
         };
         boolean receivedResult = subject.isWinPositionForDiagonals(field, 1);
         boolean exceptedResult = true;
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void winPositionTest() {
@@ -56,7 +56,7 @@ class TicTacToeTest {
         };
         boolean receivedResult = subject.isWinPosition(field, 1);
         boolean exceptedResult = true;
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void drawPositionTest() {
@@ -68,6 +68,6 @@ class TicTacToeTest {
         };
         boolean receivedResult = subject.isDrawPosition(field);
         boolean exceptedResult = true;
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 }

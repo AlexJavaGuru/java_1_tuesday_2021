@@ -1,6 +1,6 @@
 package student_alberts_matrozis.lesson_6.level_7;
 
-import student_alberts_matrozis.albertsUtils.Utils;
+import static student_alberts_matrozis.albertsUtils.Utils.*;
 
 public class FizzBuzzTest {
 
@@ -17,7 +17,7 @@ public class FizzBuzzTest {
         int num = 15;
         String exceptedResult = "FizzBuzz";
         String receivedResult = subject.detect(num);
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void fizzTest() {
@@ -25,7 +25,7 @@ public class FizzBuzzTest {
         int num = 6;
         String exceptedResult = "Fizz";
         String receivedResult = subject.detect(num);
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void buzzTest() {
@@ -33,13 +33,13 @@ public class FizzBuzzTest {
         int num = 5;
         String exceptedResult = "Buzz";
         String receivedResult = subject.detect(num);
-        Utils.check(exceptedResult, receivedResult);
+        check(exceptedResult, receivedResult);
     }
 
     public void elseFizzBuzzTest() {
         FizzBuzz subject = new FizzBuzz();
         int num = 2;
         boolean result = subject.detect(num).equals("2");
-        Utils.check(true, result);
+        check(true, result);
     }
 }
