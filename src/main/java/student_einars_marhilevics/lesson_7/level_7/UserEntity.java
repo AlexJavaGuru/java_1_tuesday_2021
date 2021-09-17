@@ -57,13 +57,5 @@ class UserEntity {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof UserEntity)) return false;
-        UserEntity that = (UserEntity) o;
-        return getiD() == that.getiD() && getPersonalCode() == that.getPersonalCode() && Objects.equals(getFirstName(), that.getFirstName()) && Objects.equals(getLastName(), that.getLastName());
-    }
-
 
 }
