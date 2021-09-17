@@ -1,5 +1,7 @@
 package student_einars_marhilevics.lesson_7.level_7;
 
+import java.util.Objects;
+
 class UserEntity {
     private int iD;
     private String firstName;
@@ -44,4 +46,24 @@ class UserEntity {
     public void setPersonalCode(int personalCode) {
         this.personalCode = personalCode;
     }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "iD=" + iD +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", personalCode=" + personalCode +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UserEntity)) return false;
+        UserEntity that = (UserEntity) o;
+        return getiD() == that.getiD() && getPersonalCode() == that.getPersonalCode() && Objects.equals(getFirstName(), that.getFirstName()) && Objects.equals(getLastName(), that.getLastName());
+    }
+
+
 }
