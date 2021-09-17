@@ -23,6 +23,8 @@ class RepositoryUser {
         System.out.println(repositoryUser.getUserById(1));
         System.out.println(Arrays.toString(repositoryUser.getUsersByName("Misha")));
         System.out.println(Arrays.toString(repositoryUser.getAllUsers()));
+        repositoryUser.deleteUser(2);
+        System.out.println(repositoryUser.getUserById(2));
     }
 
     public void saveUserEntity(UserEntity userEntity) {
@@ -56,5 +58,31 @@ class RepositoryUser {
             users[i] = userEntities.get(i);
         }
         return users;
+    }
+
+    public void refactorUser(int id, String edit, String value) {
+        switch (edit) {
+            case "name": {
+                getUserById(id).setName(value);
+            }
+            case "surname": {
+                getUserById(id).setSurname(value);
+            }
+        }
+    }
+
+    public void refactorUser(int id, String edit, int value) {
+        switch (edit) {
+            case "id": {
+                getUserById(id).setId(value);
+            }
+            case "personalCode": {
+                getUserById(id).setPersonalCode(value);
+            }
+        }
+    }
+
+    public void deleteUser(int id) {
+        userEntities.remove(getUserById(id));
     }
 }
