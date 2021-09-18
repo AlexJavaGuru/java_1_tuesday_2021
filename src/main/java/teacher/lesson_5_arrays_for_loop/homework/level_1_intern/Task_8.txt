@@ -8,5 +8,4 @@ class ArrayLength2 {
         System.out.println(numbers[1]);
         System.out.println(numbers[2]);
     }
-
 }
