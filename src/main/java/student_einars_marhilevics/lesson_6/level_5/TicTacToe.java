@@ -31,41 +31,42 @@ class TicTacToe {
         return win;
     }
 
-    boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
-        boolean win = false;
+    public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
+        return diagonalPositionFromTopToBottom(field, playerToCheck) ||
+                diagonalPositionFromBottomToTop(field, playerToCheck);
+    }
 
-        if ((field[0][0] == field[1][1] && field[0][0] == field[2][2]
-                && field[0][0] == playerToCheck) || (field[0][2] == field[1][1] && field[0][2] == field[2][0]
-                && field[0][2] == playerToCheck)) {
-            win = true;
+    private boolean diagonalPositionFromTopToBottom(int[][] field, int playerToCheck) {
+        for (int i = 0; i < field.length; i++) {
+            if (field[i][i] != playerToCheck) {
+                return false;
+            }
         }
-        return win;
+        return true;
+    }
+
+    private boolean diagonalPositionFromBottomToTop(int[][] field, int playerToCheck) {
+        for (int i = 0; i < field.length; i++) {
+            if (field[i][field.length - i - 1] != playerToCheck) {
+                return false;
+            }
+        }
+        return true;
     }
 
     boolean isWinPosition(int[][] field, int playerToCheck) {
-        boolean win = false;
-        if (isWinPositionForHorizontals(field, playerToCheck)) {
-            win = true;
-        } else if (isWinPositionForVerticals(field, playerToCheck)) {
-            win = true;
-        } else if (isWinPositionForDiagonals(field, playerToCheck)) {
-            win = true;
-        }
+        boolean win = isWinPositionForHorizontals(field, playerToCheck)
+                || isWinPositionForVerticals(field, playerToCheck)
+                || isWinPositionForDiagonals(field, playerToCheck);
         return win;
     }
 
     boolean isDrawPosition(int[][] field) {
         boolean draw = true;
-        if (isWinPosition(field, 0)) {
-            draw = false;
-        } else if (isWinPosition(field, 1)) {
-            draw = false;
-        } else {
-            for (int i = 0; i < field.length; i++) {
-                for (int j = 0; j < field.length; j++) {
-                    if (field[i][j] == -1) {
-                        draw = false;
-                    }
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field.length; j++) {
+                if (field[i][j] == -1) {
+                    draw = false;
                 }
             }
         }
@@ -100,6 +101,7 @@ class TicTacToe {
             System.out.println();
         }
     }
+
     Move compMove(int[][] field) {
         Random random = new Random();
         int x;
@@ -113,9 +115,11 @@ class TicTacToe {
             }
         } while (true);
     }
+
     Move getCompMove(int[][] field, int player) {
         return compMove(field);
     }
+
     public void play() {
         int[][] field = createField();
         while (true) {
@@ -130,7 +134,7 @@ class TicTacToe {
                 System.out.println("DRAW!");
                 break;
             }
-            Move move1 = getCompMove(field,1);
+            Move move1 = getCompMove(field, 1);
             field[move1.getX()][move1.getY()] = 1;
             if (isWinPosition(field, 1)) {
                 System.out.println("Player 1 WIN!");
