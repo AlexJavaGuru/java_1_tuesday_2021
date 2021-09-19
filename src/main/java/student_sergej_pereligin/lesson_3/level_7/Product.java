@@ -5,9 +5,17 @@ public class Product {
     double regularPrice;
     double discount;
 
-    Product(String name, double regularPrice,double discount){this.name=name; this.regularPrice=regularPrice; this.discount=discount;}
-    double actualPrice(){ return this.regularPrice*this.discount;}
-    void printInformation(){
+    Product(String name, double regularPrice, double discount) {
+        this.name = name;
+        this.regularPrice = regularPrice;
+        this.discount = discount;
+    }
+
+    double actualPrice() {
+        return this.regularPrice * this.discount;
+    }
+
+    void printInformation() {
         System.out.println(actualPrice());
     }
 }

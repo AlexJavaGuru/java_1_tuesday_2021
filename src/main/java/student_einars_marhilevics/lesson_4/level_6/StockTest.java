@@ -87,14 +87,21 @@ class StockTest {
         stock.updatePrice(priceSix);
         String realResult = stock.getPriceInformation();
         check(expectedResult, realResult, "price six test");
+        check(10, 10, "price six test");
     }
         void check(String expectedResult, String realResult, String test) {
-            if(expectedResult.equals(realResult)) {
+            if (expectedResult.equals(realResult)) {
                 System.out.println(test + " passed");
             } else {
                 System.out.println(test + " failed");
             }
         }
 
-
+        void check(int expectedResult, int realResult, String test) {
+            if (expectedResult == realResult) {
+                System.out.println(test + " passed");
+            } else {
+                System.out.println(test + " failed");
+            }
+        }
 }
