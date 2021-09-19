@@ -7,5 +7,5 @@ abstract class LoanSystem {
         this.human = human;
     }
 
-    abstract boolean canReceiveLoan(Human human);
+    abstract boolean canReceiveLoan();
 }
