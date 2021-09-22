@@ -5,7 +5,7 @@ public class DayOfTheWeekDetectorIfVersionThree implements DayOfTheWeekDetector 
     @Override
     public String detectDayName(int number) {
         String[] daysWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        String result = "День неизвестен.";
+        String result = "Unknown day";
         if (number <= 0 || number > 7) {
             System.out.println("Please input a valid number between 1 and 7");
         } else {
