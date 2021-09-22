@@ -1,4 +1,4 @@
-package student_einars_marhilevics.lesson_8.level_5;
+package student_einars_marhilevics.lesson_8.level_4;
 
 import student_einars_marhilevics.lesson_8.level_4.*;
 
@@ -41,7 +41,24 @@ public class ShapeUtil {
     double calculateArea(Shape[] shapes) {
         double result = 0;
         for (int i = 0; i < shapes.length; i++) {
-            result += Shape[i];
+            result += shapes[i].calculateArea();
         }
+        return result;
+    }
+
+    double calculatePerimeter(Shape[] shapes) {
+        double result = 0;
+        for (int i = 0; i < shapes.length; i++) {
+            result += shapes[i].calculatePerimeter();
+        }
+        return result;
+    }
+
+    double calculateArea(Shape shape) {
+        return shape.calculateArea();
+    }
+
+    double calculatePerimeter(Shape shape) {
+        return shape.calculatePerimeter();
     }
 }
