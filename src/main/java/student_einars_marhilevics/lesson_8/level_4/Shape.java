@@ -1,6 +1,6 @@
 package student_einars_marhilevics.lesson_8.level_4;
 
-abstract class Shape {
+public abstract class Shape {
     private String title;
 
     Shape(String title) {

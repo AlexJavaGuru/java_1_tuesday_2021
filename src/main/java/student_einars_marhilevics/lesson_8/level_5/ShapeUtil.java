@@ -1,10 +1,47 @@
 package student_einars_marhilevics.lesson_8.level_5;
 
-abstract class ShapeUtil {
-    double radius;
+import student_einars_marhilevics.lesson_8.level_4.*;
 
-    /*public ShapeUtil(double radius) {
-        this.radius = radius;
+import java.util.Random;
+
+public class ShapeUtil {
+
+    Random random = new Random();
+
+    Circle createRandomCircle() {
+        return new Circle("Circle", random.nextDouble());
     }
-    abstract Circle createRandomCircle();*/
+
+    Square createRandomSquare() {
+        return new Square("Square", random.nextDouble());
+    }
+
+    Rectangle createRandomRectangle() {
+        return new Rectangle("Rectangle",random.nextDouble(),random.nextDouble());
+    }
+
+    Triangle createRandomTriangle() {
+        return new Triangle("Triangle", random.nextDouble());
+    }
+
+    Shape createRandomShape() {
+        Random rnd = new Random();
+        int randomNumber = rnd.nextInt(4);
+        if (randomNumber == 0) {
+            return createRandomCircle();
+        } else if (randomNumber == 1) {
+            return createRandomSquare();
+        } else if (randomNumber == 2) {
+            return createRandomRectangle();
+        } else {
+            return createRandomTriangle();
+        }
+    }
+
+    double calculateArea(Shape[] shapes) {
+        double result = 0;
+        for (int i = 0; i < shapes.length; i++) {
+            result += Shape[i];
+        }
+    }
 }
