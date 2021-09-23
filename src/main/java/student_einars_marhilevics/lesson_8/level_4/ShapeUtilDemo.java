@@ -12,7 +12,7 @@ public class ShapeUtilDemo {
         Shape square = shapeUtil.createRandomSquare();
         double squareArea = shapeUtil.calculateArea(square);
         double squarePerimeter = shapeUtil.calculatePerimeter(square);
-        System.out.println("circleArea is " + squareArea);
-        System.out.println("circlePerimeter is " + squarePerimeter);
+        System.out.println("squareArea is " + squareArea);
+        System.out.println("squarePerimeter is " + squarePerimeter);
     }
 }
