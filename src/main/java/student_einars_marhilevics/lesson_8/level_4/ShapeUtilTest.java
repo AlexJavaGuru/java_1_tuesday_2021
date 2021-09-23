@@ -3,8 +3,12 @@ package student_einars_marhilevics.lesson_8.level_4;
 public class ShapeUtilTest {
     public static void main(String[] args) {
         ShapeUtilTest shapeUtilTest = new ShapeUtilTest();
-        shapeUtilTest.calculateArea();
-        shapeUtilTest.calculatePerimeter();
+        Shape[] shapes = new Shape[4];
+        for (int i = 0; i < shapes.length; i++) {
+            shapes[i] = createRandomShape;
+        }
+        shapeUtilTest.calculateArea(shapes);
+        shapeUtilTest.calculatePerimeter(shapes);
     }
     void calculateArea(Shape[] shapes) {
         ShapeUtil shapeUtil = new ShapeUtil();
