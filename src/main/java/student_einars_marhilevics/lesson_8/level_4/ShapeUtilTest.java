@@ -13,7 +13,7 @@ public class ShapeUtilTest {
             shapes[i] = shapeUtil.createRandomShape();
 
             double result = shapeUtil.calculateArea(shapes);
-            check(result == 0, "calculateArea ");
+            check(result >= 0, "calculateArea ");
         }
     }
 
@@ -23,7 +23,7 @@ public class ShapeUtilTest {
         for (int i = 0; i < shapes.length; i++) {
             shapes[i] = shapeUtil.createRandomShape();
             double result = shapeUtil.calculatePerimeter(shapes);
-            check(result != 0, "calculatePerimeter ");
+            check(result >= 0, "calculatePerimeter ");
         }
     }
 
