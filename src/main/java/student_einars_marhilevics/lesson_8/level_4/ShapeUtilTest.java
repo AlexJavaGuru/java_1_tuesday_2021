@@ -6,12 +6,16 @@ public class ShapeUtilTest {
         shapeUtilTest.calculateArea();
         shapeUtilTest.calculatePerimeter();
     }
-    void calculateArea() {
+    void calculateArea(Shape[] shapes) {
         ShapeUtil shapeUtil = new ShapeUtil();
+        double result = shapeUtil.calculateArea(shapes);
+        check (result == 0, "calculateArea ");
     }
 
-    void calculatePerimeter() {
+    void calculatePerimeter(Shape[] shapes) {
         ShapeUtil shapeUtil = new ShapeUtil();
+        double result = shapeUtil.calculatePerimeter(shapes);
+        check (result == 0, "calculatePerimeter ");
     }
 
     void check (boolean condition, String testName) {
