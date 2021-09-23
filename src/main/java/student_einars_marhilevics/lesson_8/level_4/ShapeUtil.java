@@ -1,7 +1,5 @@
 package student_einars_marhilevics.lesson_8.level_4;
 
-import student_einars_marhilevics.lesson_8.level_4.*;
-
 import java.util.Random;
 
 public class ShapeUtil {

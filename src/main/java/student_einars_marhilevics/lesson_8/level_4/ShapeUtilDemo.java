@@ -9,11 +9,10 @@ public class ShapeUtilDemo {
         System.out.println("circleArea is " + circleArea);
         System.out.println("circlePerimeter is " + circlePerimeter);
 
-        ShapeUtil squareTest = new ShapeUtil();
-        Shape square = squareTest.createRandomSquare();
-        double squareArea = squareTest.calculateArea(square);
-        double squarePerimeter = squareTest.calculatePerimeter(square);
-        System.out.println("squareArea is " + squareArea);
-        System.out.println("squarePerimeter is " + squarePerimeter);
+        Shape square = shapeUtil.createRandomSquare();
+        double squareArea = shapeUtil.calculateArea(square);
+        double squarePerimeter = shapeUtil.calculatePerimeter(square);
+        System.out.println("circleArea is " + squareArea);
+        System.out.println("circlePerimeter is " + squarePerimeter);
     }
 }
