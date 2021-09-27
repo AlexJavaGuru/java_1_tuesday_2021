@@ -1,17 +1,13 @@
 package student_alberts_matrozis.lesson_6.level_3;
 
-import java.util.Arrays;
-
 class ArrayService {
     public boolean contains(int[] arr, int number) {
-        boolean result = false;
         for (int arrNum : arr) {
             if (arrNum == number) {
-                result = true;
-                break;
+                return true;
             }
         }
-        return result;
+        return false;
     }
 
     public int countOccurrences(int[] arr, int number) {

@@ -13,6 +13,7 @@ class ArrayCopy {
                 i++;
             }
         }
-        return Arrays.copyOf(newArr, i);
+        int[] result = Arrays.copyOf(newArr, i);
+        return result;
     }
 }

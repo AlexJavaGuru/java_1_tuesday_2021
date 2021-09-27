@@ -15,16 +15,21 @@ class RepositoryUser {
         UserEntity userThree = new UserEntity(3, "John", "Smith", 84934);
         UserEntity userFour = new UserEntity(4, "Liza", "Simpson", 94724);
         UserEntity userFive = new UserEntity(5, "Barth", "Simpson", 32134);
+        UserEntity userSix = new UserEntity(6, "Misha", "Smith", 1337228);
+
         repositoryUser.saveUserEntity(userOne);
         repositoryUser.saveUserEntity(userTwo);
         repositoryUser.saveUserEntity(userThree);
         repositoryUser.saveUserEntity(userFour);
         repositoryUser.saveUserEntity(userFive);
+        repositoryUser.saveUserEntity(userSix);
+
         System.out.println(repositoryUser.getUserById(1));
         System.out.println(Arrays.toString(repositoryUser.getUsersByName("Misha")));
         System.out.println(Arrays.toString(repositoryUser.getAllUsers()));
         repositoryUser.deleteUser(2);
         System.out.println(repositoryUser.getUserById(2));
+        System.out.println(Arrays.toString(repositoryUser.getUsersByName("Misha")));
     }
 
     public void saveUserEntity(UserEntity userEntity) {
@@ -60,28 +65,13 @@ class RepositoryUser {
         return users;
     }
 
-    public void refactorUser(int id, String edit, String value) {
-        switch (edit) {
-            case "name": {
-                getUserById(id).setName(value);
-            }
-            case "surname": {
-                getUserById(id).setSurname(value);
-            }
-        }
-    }
+    public void refactorUser(int id, UserEntity newUser) {
+        getUserById(id).setName(newUser.getName());
+        getUserById(id).setSurname(newUser.getSurname());
+        getUserById(id).setPersonalCode(newUser.getPersonalCode());
+        getUserById(id).setId(newUser.getId());
 
-    public void refactorUser(int id, String edit, int value) {
-        switch (edit) {
-            case "id": {
-                getUserById(id).setId(value);
-            }
-            case "personalCode": {
-                getUserById(id).setPersonalCode(value);
-            }
-        }
     }
-
     public void deleteUser(int id) {
         userEntities.remove(getUserById(id));
     }

@@ -1,8 +1,6 @@
 package student_alberts_matrozis.lesson_6.level_4;
 
-import static student_alberts_matrozis.albertsUtils.Utils.*;
-
-import java.util.Arrays;
+import static student_alberts_matrozis.albertsUtils.ArrayUtil.*;
 
 class TwoDimensionArray {
     public static void main(String[] args) {

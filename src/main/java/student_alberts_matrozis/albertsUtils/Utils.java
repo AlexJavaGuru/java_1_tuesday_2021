@@ -1,54 +1,40 @@
 package student_alberts_matrozis.albertsUtils;
 
 public class Utils {
+    public static final String RED = "\u001B[31m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String RESET = "\033[0m";
+
     public static void check(String exceptedResult, String receivedResult) {
         if (exceptedResult == receivedResult) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!" + RESET);
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!" + RESET);
         }
     }
 
     public static void check(boolean exceptedResult, boolean receivedResult) {
         if (exceptedResult == receivedResult) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!");
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!");
         }
     }
 
     public static void check(int exceptedResult, int receivedResult) {
         if (exceptedResult == receivedResult) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!" + RESET);
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!" + RESET);
         }
     }
 
     public static void check(double exceptedResult, double receivedResult) {
         if (exceptedResult == receivedResult) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!" + RESET);
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!" + RESET);
         }
-    }
-
-    public static void fillArrayWithRandomNumbers(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = (int ) (Math.random() * 100 + 1);
-            }
-        }
-    }
-
-    public static int calculateNumbersInArray(int[][] arr) {
-        int num = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                num = num + arr[i][j];
-            }
-        }
-        return num;
     }
 
     public static void checkArrays(int[] actualArray, int[] receivedArray) {
@@ -64,9 +50,9 @@ public class Utils {
             passed = true;
         }
         if (passed) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!" + RESET);
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!" + RESET);
         }
     }
 
@@ -83,9 +69,9 @@ public class Utils {
             passed = true;
         }
         if (passed) {
-            System.out.println("Test passed!");
+            System.out.println(GREEN + "Test passed!" + RESET);
         } else {
-            System.out.println("Test failed!");
+            System.out.println(RED + "Test failed!" + RESET);
         }
     }
 

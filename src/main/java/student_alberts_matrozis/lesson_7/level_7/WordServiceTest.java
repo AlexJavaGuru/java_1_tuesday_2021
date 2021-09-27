@@ -1,6 +1,7 @@
 package student_alberts_matrozis.lesson_7.level_7;
 
-import static student_alberts_matrozis.albertsUtils.Utils.*;
+import static student_alberts_matrozis.albertsUtils.Utils.check;
+import static student_alberts_matrozis.albertsUtils.Utils.checkArrays;
 
 class WordServiceTest {
     public static void main(String[] args) {
