@@ -1,7 +1,6 @@
 package student_alberts_matrozis.lesson_7.level_7;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class RepositoryUser {
@@ -25,11 +24,9 @@ class RepositoryUser {
         repositoryUser.saveUserEntity(userSix);
 
         System.out.println(repositoryUser.getUserById(1));
-        System.out.println(Arrays.toString(repositoryUser.getUsersByName("Misha")));
-        System.out.println(Arrays.toString(repositoryUser.getAllUsers()));
         repositoryUser.deleteUser(2);
         System.out.println(repositoryUser.getUserById(2));
-        System.out.println(Arrays.toString(repositoryUser.getUsersByName("Misha")));
+        System.out.println(repositoryUser.getUsersByName("Misha"));
     }
 
     public void saveUserEntity(UserEntity userEntity) {
@@ -45,16 +42,14 @@ class RepositoryUser {
         return null;
     }
 
-    public UserEntity[] getUsersByName(String name) {
-        UserEntity[] users = new UserEntity[userEntities.toArray().length];
-        int counter = 0;
+    public List<UserEntity> getUsersByName(String name) {
+        List<UserEntity> users = new ArrayList<UserEntity>();
         for (int i = 0; i < userEntities.toArray().length; i++) {
             if (userEntities.get(i).getName().equals(name)) {
-                users[counter] = userEntities.get(i);
-                counter++;
+                users.add(userEntities.get(i));
             }
         }
-        return Arrays.copyOf(users, counter);
+        return users;
     }
 
     public UserEntity[] getAllUsers() {
@@ -66,12 +61,14 @@ class RepositoryUser {
     }
 
     public void refactorUser(int id, UserEntity newUser) {
-        getUserById(id).setName(newUser.getName());
-        getUserById(id).setSurname(newUser.getSurname());
-        getUserById(id).setPersonalCode(newUser.getPersonalCode());
-        getUserById(id).setId(newUser.getId());
+        UserEntity user = getUserById(id);
 
+        user.setName(newUser.getName());
+        user.setSurname(newUser.getSurname());
+        user.setPersonalCode(newUser.getPersonalCode());
+        user.setId(newUser.getId());
     }
+
     public void deleteUser(int id) {
         userEntities.remove(getUserById(id));
     }
