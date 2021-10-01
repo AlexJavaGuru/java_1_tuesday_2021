@@ -1,7 +1,6 @@
 package student_einars_marhilevics.lesson_7.level_7;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class UserEntityRepository {
@@ -40,15 +39,11 @@ class UserEntityRepository {
         return users;
     }
 
-    public void refactorUser(int id, String edit, String newName) {
-        switch (edit) {
-            case "first name": {
-                getUserById(id).setFirstName(newName);
-            }
-            case "last name": {
-                getUserById(id).setLastName(newName);
-            }
-        }
+    public void refactorUser(UserEntity user, String firstName, String lastName, int id, int personalCode) {
+        user.setiD(id);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setPersonalCode(personalCode);
     }
 
     public void deleteUser(int id) {
