@@ -10,6 +10,16 @@ public class ReaderCard {
     private List<ReaderCardEntry> readerCardEntries;
     private List<Penalty> penalties;
 
+    public void removeIfExists(Book book) {
+        Book findBook = null;
+        for (Book takenBook : takenBooks) {
+            if (takenBook.equals(book)) {
+                findBook = takenBook;
+            }
+        }
+        takenBooks.remove(findBook);
+    }
+
     public void assignBookToTheCard(Book book) {
         takenBooks.add(book);
     }
