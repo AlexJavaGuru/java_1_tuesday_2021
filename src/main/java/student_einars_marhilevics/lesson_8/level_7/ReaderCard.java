@@ -1,4 +1,4 @@
-package teacher.lesson_9_interfaces.lessoncode.bookssystem;
+package student_einars_marhilevics.lesson_8.level_7;
 
 import java.util.List;
 
@@ -9,16 +9,6 @@ public class ReaderCard {
     private List<Book> takenBooks;
     private List<ReaderCardEntry> readerCardEntries;
     private List<Penalty> penalties;
-
-    public void removeIfExists(Book book) {
-        Book findBook = null;
-        for (Book takenBook : takenBooks) {
-            if (takenBook.equals(book)) {
-                findBook = takenBook;
-            }
-        }
-        takenBooks.remove(findBook);
-    }
 
     public void assignBookToTheCard(Book book) {
         takenBooks.add(book);
