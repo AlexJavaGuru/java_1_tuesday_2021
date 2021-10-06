@@ -17,7 +17,8 @@ class TicTacToe {
     public void play() {
         int[][] field = createField();
         while(true) {
-            printFieldToConsole(field);
+            //printFieldToConsole(field);
+            System.out.println("Computer move:");
             Move move0 = computerMove(field);
             field[move0.getX()][move0.getY()] = 0;
             printFieldToConsole(field);
@@ -33,6 +34,7 @@ class TicTacToe {
             //printFieldToConsole(field);
             Move move1 = getNextMove();
             field[move1.getX()][move1.getY()] = 1;
+            System.out.println("Player move:");
             printFieldToConsole(field);
             if (isWinPosition(field, 1)) {
                 System.out.println("Player 1 WIN!");
@@ -142,14 +144,10 @@ class TicTacToe {
         do{
             int coordinateX = random.nextInt(3);
             int coordinateY = random.nextInt(3);
-            for(int i = 0; i < field.length; i++) {
-                for(int j = 0; i < field[i].length; j++) {
-                    if(field[i][j] == -1) {
-                        return new Move(coordinateX, coordinateY);
-                    }
-                }
+            if(field[coordinateX][coordinateY] == -1) {
+                return new Move(coordinateX, coordinateY);
             }
-        } while(true);
+        }while(true);
     }
 
     public void printFieldToConsole(int[][] field) {
