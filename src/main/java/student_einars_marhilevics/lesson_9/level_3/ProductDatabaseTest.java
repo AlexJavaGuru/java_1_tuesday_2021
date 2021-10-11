@@ -44,7 +44,7 @@ public class ProductDatabaseTest {
     }
 
 
-        void check ( boolean condition, String testName){
+        void check(boolean condition, String testName){
             if (condition) {
                 System.out.println(testName + " passed");
             } else {
