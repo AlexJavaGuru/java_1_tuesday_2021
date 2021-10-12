@@ -8,4 +8,20 @@ class SafeVolTwo {
         this.pinCode = pinCode;
         this.amount = amount;
     }
+
+    void getMoney(int code, int withdraw){
+        if (code == pinCode) {
+            amount -= withdraw;
+        }
+    }
+
+    void putMoney(int code, int cashIn){
+        if (code == pinCode) {
+            amount += cashIn;
+        }
+    }
+
+    public int getAmount() {
+        return amount;
+    }
 }
