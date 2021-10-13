@@ -7,6 +7,6 @@ class FraudRule2 extends FraudRule {
 
     @Override
     public boolean isFraud(Transaction t) {
-        return false;
+        return t.getAmount() > 1000000;
     }
 }

@@ -7,6 +7,6 @@ class FraudRule4 extends FraudRule {
 
     @Override
     public boolean isFraud(Transaction t) {
-        return false;
+        return t.getTrader().getCountry().equals("Ямайка");
     }
 }

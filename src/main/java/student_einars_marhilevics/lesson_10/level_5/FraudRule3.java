@@ -7,6 +7,6 @@ class FraudRule3 extends FraudRule {
 
     @Override
     public boolean isFraud(Transaction t) {
-        return false;
+        return t.getTrader().getCity().equals("Sidney");
     }
 }
