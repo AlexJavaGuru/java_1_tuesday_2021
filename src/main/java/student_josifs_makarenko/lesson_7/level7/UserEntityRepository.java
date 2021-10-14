@@ -7,35 +7,6 @@ public class UserEntityRepository {
 
     static UserEntity[] userList;
 
-    public static void main(String[] args) {
-        UserEntityRepository userEntityRepository = new UserEntityRepository();
-        UserEntity user1 = new UserEntity("Dima", "Ivanov", 12345678);
-        UserEntity user2 = new UserEntity("Josifs", "Makarenko", 87654321);
-        UserEntity user3 = new UserEntity("Andrey", "Sidorov", 12346325);
-        UserEntity user4 = new UserEntity("Ivan", "Andreev", 1245446);
-        UserEntity user5 = new UserEntity("Misha", "Mihailov", 3434221);
-
-
-        userEntityRepository.createUser(user1);
-        userEntityRepository.createUser(user2);
-        userEntityRepository.createUser(user3);
-        userEntityRepository.createUser(user4);
-        userEntityRepository.createUser(user5);
-
-        System.out.println(Arrays.toString(userList).replace("[", "").replace("]", ""));
-
-        userEntityRepository.changeUser(user5, "Piter", "Peytrov", 1234, 1234535321);
-        System.out.println(Arrays.toString(userList).replace("[", "").replace("]", ""));
-
-        userEntityRepository.deleteUser(user1);
-        System.out.println(Arrays.toString(userList).replace("[", "").replace("]", ""));
-
-        System.out.println(userEntityRepository.findUsingName("Ivan"));
-        System.out.println(userEntityRepository.findUsingSurname("Peytrov"));
-        System.out.println(userEntityRepository.findUsingPersonalCode(87654321));
-        System.out.println(userEntityRepository.findUsingId());
-    }
-
     void createUser(UserEntity user) {
         UserEntity[] userData;
         if (userList == null) {
@@ -68,7 +39,7 @@ public class UserEntityRepository {
         userList = temp;
     }
 
-    UserEntity findUsingName(String name) {
+    UserEntity findUserByName(String name) {
         for (UserEntity userEntity : userList) {
             if (userEntity.getName().equals(name)) {
                 return userEntity;

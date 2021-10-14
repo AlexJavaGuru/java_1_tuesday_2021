@@ -2,12 +2,6 @@ package student_josifs_makarenko.lesson_7.level1;
 
 public class WordService {
 
-    public static void main(String[] args) {
-        WordService wordService = new WordService();
-        String text = "ok ok ok help me ok ok ok ok";
-        System.out.println(wordService.findMostFrequentWord(text));
-    }
-
     public String findMostFrequentWord(String text) {
         return findEqualWords(transformToArray(text));
     }

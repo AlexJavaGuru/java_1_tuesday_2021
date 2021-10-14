@@ -32,19 +32,17 @@ public class CreditCard {
     }
 
 
-    String createCard (int cardNumber, int pinCode) {
+    CreditCard (int cardNumber, int pinCode) {
         this.cardNumber = cardNumber;
         this.pinCode = pinCode;
-        String card = "AlfaBank card: ";
-        return card + cardNumber + "Yor pin: " + pinCode + " REMEMBER it!";
     }
 
     void deposit(int userPinCode, int sum) {
         if (checkPin(userPinCode)) {
-            if (getBalance() == 0) {
-                balance = getBalance() + sum;
+            if (balance == 0) {
+                balance = balance + sum;
             } else {
-                balance = getBalance() + sum + getDuty();
+                balance = balance + sum + duty;
             }
         } else {
             System.out.println("Your pin is not correct!");
@@ -58,11 +56,11 @@ public class CreditCard {
         if (checkPin(userPinCode)) {
             if (sum < getBalance()) {
                 balance = getBalance() - sum;
-            } else if (sum >= getBalance() && getCreditLimit() >= getDuty()) {
-                duty = getBalance();
-                duty = getDuty() - sum;
+            } else if (sum >= balance && creditLimit >= duty) {
+                duty = balance;
+                duty = balance - sum;
                 balance = 0;
-            } else if(getDuty() == 0 && (getBalance() - sum + getCreditLimit()) < 0) {
+            } else if(duty == 0 && (balance - sum + creditLimit) < 0) {
                 Scanner scanner = new Scanner(System.in);
 
                 System.out.println("Your sum is so large");
