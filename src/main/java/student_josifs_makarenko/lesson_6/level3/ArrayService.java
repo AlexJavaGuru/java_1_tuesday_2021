@@ -16,10 +16,9 @@ public class ArrayService {
     int countOccurrences(int[] array, int numberToSearch) {
         int numberOfRepeat = 0;
         for (int j : array) {
-            if (j != numberToSearch) {
-                continue;
+            if (j == numberToSearch) {
+                numberOfRepeat++;
             }
-            numberOfRepeat++;
         }
         return numberOfRepeat;
     }
