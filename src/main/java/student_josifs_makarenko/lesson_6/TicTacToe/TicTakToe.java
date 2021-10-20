@@ -233,7 +233,7 @@ public class TicTakToe {
                 !fakeField[i][j].equals(symbolTwo) &&
                 fakeField[i][j].equals(symbolThree) &&
                 fakeField[1][1].equals(symbolThree)) {
-            fakeField[1][1] = symbolOne;
+            fakeField[1][1] = symbolToCheck;
         } else if (!fakeField[i][j].equals(symbolToCheck) &&
                 !fakeField[i][j].equals("|") &&
                 !fakeField[i][j].equals("*") &&
