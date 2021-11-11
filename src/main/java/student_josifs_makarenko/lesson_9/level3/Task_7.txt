@@ -1,0 +1,28 @@
+Является ли следующий интерфейс функциональным?
+Нет не является, так как в классе ProductDatabase больше чем один метод.
+Но если бы метот findByTitle был абстрактным классом, определённым в клсе Object, это бы был функциональным интерфейсом
+
+
+interface ProductDatabase {
+
+    void save(Product product);
+
+    Product findByTitle(String productTitle);
+
+}
+
+
+class Product {
+
+    private String title;
+
+    public Product(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+}
+
