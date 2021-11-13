@@ -9,12 +9,28 @@ public class Book {
     private String author;
     private boolean isTaken;
 
+    public Book(String title, String author, boolean isTaken) {
+        this.title = title;
+        this.author = author;
+        this.isTaken = isTaken;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
         return Objects.equals(title, book.title) && Objects.equals(author, book.author);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", isTaken=" + isTaken +
+                '}';
     }
 
     public boolean isTaken() {
