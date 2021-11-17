@@ -1,6 +1,5 @@
 package student_daniel.lesson11.level2;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -21,6 +20,8 @@ public class BookTest {
         myTest.findBookByAuthor();
         myTest.findBookByTitle();
         myTest.bookCount();
+        myTest.deleteByAuthor();
+        myTest.deleteByTitle();
     }
 
     //Color Theme
@@ -150,7 +151,7 @@ public class BookTest {
         bookList.save(newBook3);
         bookList.save(newBook4);
         String authorName = "Tom";
-        List<Book> expectedResult = Collections.singletonList(newBook);
+        List<Book> expectedResult = List.of(newBook, newBook3);
         List<Book> actualResult = bookList.findByAuthor(authorName);
         check(expectedResult, actualResult, "Four books are added >>> Search books by Author >>> Return List of books : " + actualResult);
     }
@@ -166,8 +167,8 @@ public class BookTest {
         bookList.save(newBook3);
         bookList.save(newBook4);
         String titleName = "Cat";
-        List<Book> expectedResult = Collections.singletonList(newBook);
-        List<Book> actualResult = bookList.findByAuthor(titleName);
+        List<Book> expectedResult = List.of(newBook, newBook2);
+        List<Book> actualResult = bookList.findByTitle(titleName);
         check(expectedResult, actualResult, "Four books are added >>> Search books by Title >>> Return List of books : " + actualResult);
     }
 
@@ -181,7 +182,41 @@ public class BookTest {
         bookList.save(newBook3);
         int expectedResult = 3;
         int actualResult = bookList.countAllBooks();
-        check(expectedResult, actualResult, "Three books are added >>> Total count  >>> Return : " + actualResult);
+        check(expectedResult, actualResult, "Three books are added >>> Total count of books  >>> Return : " + actualResult);
+    }
+
+    void deleteByAuthor() {
+        BookDatabaseImpl bookList = new BookDatabaseImpl();
+        Book newBook = new Book("Book 1", "Added 1");
+        Book newBook2 = new Book("Book 2", "Added 2");
+        Book newBook3 = new Book("Book 3", "Added 3");
+        Book newBook4 = new Book("Book 4", "Added 2");
+        bookList.save(newBook);
+        bookList.save(newBook2);
+        bookList.save(newBook3);
+        bookList.save(newBook4);
+        String authorName = "Added 2";
+        bookList.deleteByAuthor(authorName);
+        List<Book> expectedResult = List.of(newBook, newBook3);
+        List<Book> actualResult = bookList.allBooks;
+        check(expectedResult, actualResult, "Four books are added >>> Two books are deleted by Author >>> Return : " + actualResult);
+    }
+
+    void deleteByTitle() {
+        BookDatabaseImpl bookList = new BookDatabaseImpl();
+        Book newBook = new Book("Book 1", "Added 1");
+        Book newBook2 = new Book("Book 2", "Added 2");
+        Book newBook3 = new Book("Book 4", "Added 3");
+        Book newBook4 = new Book("Book 4", "Added 2");
+        bookList.save(newBook);
+        bookList.save(newBook2);
+        bookList.save(newBook3);
+        bookList.save(newBook4);
+        String titleName = "Book 4";
+        bookList.deleteByTitle(titleName);
+        List<Book> expectedResult = List.of(newBook, newBook2);
+        List<Book> actualResult = bookList.allBooks;
+        check(expectedResult, actualResult, "Four books are added >>> Two books are deleted by Title >>> Return : " + actualResult);
     }
 
     void check(Long expectedResult, Long actualResult, String testName) {

@@ -1,7 +1,5 @@
 package student_daniel.lesson11.level2;
 
-import teacher.lesson_11_collections.lessoncode.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -52,25 +50,19 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public List<Book> findByAuthor(String author) {
         List<Book> booksByAuthor = new ArrayList<>();
-        for (Book thisBook : allBooks) {
-            if (thisBook.getAuthor().equals(author)) {
-                booksByAuthor.add(thisBook);
-            }
-            return booksByAuthor;
-        }
-        return null;
+        allBooks.stream()
+                .filter(authorName -> authorName.getAuthor().equals(author))
+                .forEachOrdered(booksByAuthor::add);
+        return booksByAuthor;
     }
 
     @Override
     public List<Book> findByTitle(String title) {
         List<Book> booksByTitle = new ArrayList<>();
-        for (Book thisBook : allBooks) {
-            if (thisBook.getTitle().equals(title)) {
-                booksByTitle.add(thisBook);
-            }
-            return booksByTitle;
-        }
-        return null;
+        allBooks.stream()
+                .filter(titleName -> titleName.getTitle().equals(title))
+                .forEachOrdered(booksByTitle::add);
+        return booksByTitle;
     }
 
     @Override
@@ -80,19 +72,11 @@ public class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public void deleteByAuthor(String author) {
-        for (Book thisBook : allBooks) {
-            if (author != null && allBooks.contains(author)) {
-                allBooks.remove(thisBook);
-            }
-        }
+        allBooks.removeIf(authorName -> authorName.getAuthor().equals(author));
     }
 
     @Override
     public void deleteByTitle(String title) {
-        for (Book thisBook : allBooks) {
-            if (title != null && allBooks.contains(title)) {
-                allBooks.remove(thisBook);
-            }
-        }
+        allBooks.removeIf(titleName -> titleName.getTitle().equals(title));
     }
 }

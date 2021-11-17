@@ -1,7 +1,5 @@
 package student_daniel.lesson11.level2;
 
-import java.util.Objects;
-
 class Book {
     //Task 6 7 8 9 10 11 12 13 14
     private Long id;
@@ -35,11 +33,6 @@ class Book {
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
         return id.equals(book.id) && title.equals(book.title) && author.equals(book.author);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, author);
     }
 
     @Override
