@@ -1,11 +1,9 @@
-package student_daniel.lesson11.level2;
+package student_daniel.lesson11.level2_3_4;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class BookDatabaseImpl implements BookDatabase {
-    //Task 6 7 8 9 10 11 12 13 14
+    //Task 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27
     List<Book> allBooks = new ArrayList<>();
     private Long longID = 0L;
 
@@ -22,17 +20,13 @@ public class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public boolean delete(Long bookId) {
-        if (bookId != null) {
-            return allBooks.removeIf(book -> book.getId().equals(bookId));
-        }
-        return false;
+        return allBooks.removeIf(book -> book.getId().equals(bookId));
     }
 
     @Override
     public boolean delete(Book book) {
         if (book != null && allBooks.contains(book)) {
-            allBooks.remove(book);
-            return true;
+            return allBooks.remove(book);
         }
         return false;
     }
@@ -78,5 +72,44 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByTitle(String title) {
         allBooks.removeIf(titleName -> titleName.getTitle().equals(title));
+    }
+
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        List<Book> booksByCriteria = new ArrayList<>();
+        for (Book thisBook : allBooks) {
+            if (searchCriteria.match(thisBook)) {
+                booksByCriteria.add(thisBook);
+            }
+        }
+        return booksByCriteria;
+    }
+
+    @Override
+    public boolean contains(Book book) {
+        return allBooks.contains(book);
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+        Set<String> booksByAuthor = new HashSet<>();
+        for (Book thisBook : allBooks) {
+            booksByAuthor.add(thisBook.getAuthor());
+        }
+        return booksByAuthor;
+    }
+
+    @Override
+    public Set<String> findUniqueTitles() {
+        Set<String> booksByTitle = new HashSet<>();
+        for (Book thisBook : allBooks) {
+            booksByTitle.add(thisBook.getTitle());
+        }
+        return booksByTitle;
+    }
+
+    @Override
+    public Set<Book> findUniqueBooks() {
+        return new HashSet<>(allBooks);
     }
 }
