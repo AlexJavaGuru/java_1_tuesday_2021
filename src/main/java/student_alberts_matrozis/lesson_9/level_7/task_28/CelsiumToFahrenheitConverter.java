@@ -5,7 +5,7 @@ public class CelsiumToFahrenheitConverter implements ConvertStrategy{
     @Override
     public double convert(double temperature) {
 
-        double a = (temperature * 1.8) + 32;
-        return Math.round(a * 100.0) / 100.0;
+        double fahrenheit = (temperature * 1.8) + 32;
+        return Math.round(fahrenheit * 100.0) / 100.0;
     }
 }

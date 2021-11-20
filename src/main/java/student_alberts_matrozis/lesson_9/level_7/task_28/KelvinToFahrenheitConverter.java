@@ -4,7 +4,7 @@ public class KelvinToFahrenheitConverter implements ConvertStrategy {
 
     @Override
     public double convert(double temperature) {
-        double a = (temperature - 273.15) * 1.8 + 32;
-        return Math.round(a * 100.0) / 100.0;
+        double fahrenheit = (temperature - 273.15) * 1.8 + 32;
+        return Math.round(fahrenheit * 100.0) / 100.0;
     }
 }
