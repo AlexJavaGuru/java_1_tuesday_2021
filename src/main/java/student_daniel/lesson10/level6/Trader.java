@@ -1,0 +1,35 @@
+package student_daniel.lesson10.level6;
+
+class Trader {
+    //Task 30 31 32 33
+    private String fullName;
+    private String city;
+    private String country;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public Trader(String fullName, String city, String country) {
+        this.fullName = fullName;
+        this.city = city;
+        this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Trader{" +
+                "fullName='" + fullName + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
+}
